@@ -1,0 +1,16 @@
+@use "common/variables.scss";
+
+.hero {
+  color: variables.$white;
+  background-color: rgba(104, 183, 56, 0.85);
+  text-align: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/mobile/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero__text {
+  text-transform: uppercase;
+  line-height: 14px;
+}

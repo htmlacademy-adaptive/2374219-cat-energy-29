@@ -1,0 +1,19 @@
+@use "common/variables.scss";
+
+.measure {
+  text-align: center;
+}
+
+.measure__number {
+  color: variables.$black;
+  font-family: variables.$oswald-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.measure__text {
+  font-size: 12px;
+  line-height: 12px;
+}

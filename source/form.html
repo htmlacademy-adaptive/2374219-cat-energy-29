@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo logo-image" href="index.html">
         <img class="logo-image__icon" src="img/mobile/logo-icon.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
-      </a>
-      <a class="main-header__logo logo-name" href="index.html">
         <img class="logo-name__text" src="img/mobile/logo-header.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
       </a>
       <nav class="main-nav">
@@ -17,7 +16,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list zero-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -31,24 +30,24 @@
         </div>
       </nav>
     </header>
-    <main class="form-container">
-      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-        <h1 class="form__title">Подбор программы</h1>
+    <main class="main-container">
+      <h1 class="main-container__title main-container__title--big">Подбор программы</h1>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <fieldset class="form__item">
-          <legend class="form__part-title visually-hidden">Основная информация о коте</legend>
+          <legend class="visually-hidden">Основная информация о коте</legend>
           <label class="form__label">Имя:*
-            <input class="form__input" type="text" name="name" value="Барсик" required>
+            <input class="form__input" type="text" name="name" placeholder="Барсик" required>
           </label>
           <label class="form__label">Вес (кг):*
-            <input class="form__input" type="number" name="weight" min="0.1" max="25" value="7" required>
+            <input class="form__input" type="number" name="weight" placeholder="7" required>
           </label>
           <label class="form__label">Возраст (лет):*
-            <input class="form__input" type="number" name="age" min="0.1" max="30" value="7" required>
+            <input class="form__input" type="number" name="age" placeholder="7" required>
           </label>
         </fieldset>
         <fieldset class="form__item">
-          <legend class="form__part-title visually-hidden">Выбор программы:</legend>
+          <legend class="visually-hidden">Выбор программы:</legend>
           <label class="form__label">
             <input class="form__radio visually-hidden" type="radio" name="program" value="weight-loss" checked>
             <span class="form__mark"></span>Похудение
@@ -65,16 +64,16 @@
         <fieldset class="form__item">
           <legend class="form__part-title">Контактные данные (владельца кота)</legend>
           <label class="form__label">E-mail:*
-            <input class="form__input" type="email" name="e-mail" value="kuklachev@gmail.com" required>
+            <input class="form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form__label">Телефон:*
-            <input class="form__input" type="tel" name="phone" value="8 (960) 900-60-90" required>
+            <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
         <fieldset class="form__item">
           <legend class="form__part-title">Комментарий</legend>
           <label class="form__label">
-            <textarea class="form__input" name="cat-description" cols="33" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__input" name="cat-description" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </fieldset>
         <fieldset class="form__item">
@@ -97,21 +96,21 @@
           </label>
         </fieldset>
         <div class="form__wrapper">
-          <button class="form__button form-button" type="submit">Отправить заявку</button>
+          <button class="form__button button" type="submit">Отправить заявку</button>
           <span class="form__note">* — Обязательные поля</span>
         </div>
       </form>
     </main>
     <footer class="main-footer">
-        <section class="main-footer__section address-contact">
+        <section class="main-footer__section address-contact address-contact--grey">
           <h2 class="address-contact__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="address-contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           <img class="address-contact__image map" src="img/mobile/map-image.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
         </section>
         <section class="main-footer__section social">
-          <h2 class="social__title">Социальные ссылки</h2>
-          <a class="main-footer__logo logo-footer" href="index.html">
-            <svg role="img" aria-label="Текст логотипа Кэт Энерджи." xmlns="http://www.w3.org/2000/svg" width="128" height="24" fill="none" viewBox="0 0 128 24">
+          <h2 class="visually-hidden">Социальные ссылки</h2>
+          <a class="main-footer__logo logo-image" href="index.html">
+            <svg class="logo-image__text logo-image__text--footer" role="img" aria-label="Текст логотипа Кэт Энерджи." xmlns="http://www.w3.org/2000/svg" width="128" height="24" fill="none" viewBox="0 0 128 24">
               <g fill="#111" clip-path="url(#a)">
                 <path d="M1.624 21.957A9.428 9.428 0 0 1 .02 16.238V7.762A9.559 9.559 0 0 1 1.523 1.94C2.625.613 4.327 0 6.831 0c2.503 0 4.106.613 5.107 1.736A7.433 7.433 0 0 1 13.44 6.74v2.043H8.533V6.434a5.116 5.116 0 0 0-.3-2.043 1.46 1.46 0 0 0-.579-.627 1.42 1.42 0 0 0-.823-.19c-.701 0-1.202.205-1.402.715a6.72 6.72 0 0 0-.3 2.247v10.928a4.3 4.3 0 0 0 .4 2.145c.2.51.701.714 1.402.714s1.102-.204 1.302-.715c.227-.69.33-1.417.3-2.144v-2.451h4.907v2.042a7.922 7.922 0 0 1-1.502 5.107C10.937 23.387 9.234 24 6.831 24c-2.403-.102-4.206-.715-5.207-2.043ZM19.348.306h5.708l4.206 23.285h-4.606l-.801-4.902H20.55l-.801 4.902h-4.707L19.348.306Zm4.106 15.32-1.202-9.09-1.201 9.09h2.403ZM32.767 4.187h-3.405V.307H41.28v3.778h-3.405v19.506h-5.107V4.188ZM50.392.306h8.812v2.451h-5.708v7.66h4.606v2.349h-4.606v8.579h5.708v2.349H50.29V.306h.1ZM61.808.306h2.203l6.509 15.422V.306h2.603v23.285h-2.002L64.51 7.66V23.59h-2.703V.306ZM76.128.306h8.812v2.451h-5.708v7.66h4.606v2.349h-4.606v8.579h5.708v2.349h-8.812V.306ZM87.543.306h4.607a7.896 7.896 0 0 1 5.107 1.43c1.102.92 1.602 2.553 1.602 4.698 0 2.962-.901 4.8-2.804 5.413l3.205 11.642h-3.105l-3.004-10.927h-2.503v10.927h-3.205V.306h.1Zm4.407 10.009a4.313 4.313 0 0 0 2.904-.817c.6-.51.901-1.532.901-3.064a6.722 6.722 0 0 0-.3-2.247 2.576 2.576 0 0 0-1.102-1.225 4.488 4.488 0 0 0-2.203-.409h-1.402v7.66h1.202v.102ZM102.865 21.855a10.485 10.485 0 0 1-1.402-5.923V8.17c-.025-1.48.144-2.957.501-4.391a5.186 5.186 0 0 1 1.902-2.656 6.438 6.438 0 0 1 3.705-.919c2.103 0 3.606.51 4.507 1.634a7.93 7.93 0 0 1 1.402 5.107v.817h-3.004v-.715c.004-.855-.063-1.71-.201-2.553a2.045 2.045 0 0 0-.801-1.328 3.05 3.05 0 0 0-1.903-.51 2.961 2.961 0 0 0-2.002.612 2.331 2.331 0 0 0-.801 1.634 19.568 19.568 0 0 0-.201 2.758v8.68a9.433 9.433 0 0 0 .601 3.881c.401.817 1.202 1.124 2.403 1.124.475.06.956-.024 1.384-.242.428-.218.782-.56 1.02-.984a9.572 9.572 0 0 0 .701-4.085V14.4h-2.904v-2.349h5.808v11.54h-2.003l-.3-2.655a4.172 4.172 0 0 1-1.553 2.202 4.03 4.03 0 0 1-2.553.76 4.924 4.924 0 0 1-2.406-.468 5.032 5.032 0 0 1-1.9-1.575ZM119.989 15.421 115.082.408h3.004l3.505 11.235L124.996.408H128l-4.907 15.013v8.17h-3.004v-8.17h-.1Z"/>
               </g>
@@ -122,7 +121,7 @@
               </defs>
             </svg>
           </a>
-          <ul class="social__list social-list">
+          <ul class="social__list social-list zero-list">
             <li class="social__item">
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
@@ -148,9 +147,9 @@
               </a>
             </li>
           </ul>
-          <div class="html-academy-logo">
-            <a class="html-academy-logo__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            <a class="html-academy-logo__icon" href="https://htmlacademy.ru/">
+          <div class="html-logo">
+            <a class="html-logo__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="html-logo__icon" href="https://htmlacademy.ru/">
               <svg role="img" aria-label="Логотип html-academy." xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
                 <g clip-path="url(#b)">
                   <path fill="#666" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/>

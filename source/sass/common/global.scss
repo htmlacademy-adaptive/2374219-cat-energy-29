@@ -1,0 +1,27 @@
+@use "variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  font-family: variables.$lato-font;
+  font-size: 14px;
+  color: variables.$dark-grey;
+  line-height: 18px;
+  background-color: variables.$white;
+}
+
+.zero-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

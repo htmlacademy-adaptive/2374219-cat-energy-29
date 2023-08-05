@@ -1,1 +1,27 @@
-// Начните писать стили здесь
+@use "common/global.scss";
+@use "common/variables.scss";
+@use "common/fonts.scss";
+@use "common/visually-hidden.scss";
+@use "common/title.scss";
+@use "common/button.scss";
+
+/* base */
+@use "blocks/site-list.scss";
+@use "blocks/address.scss";
+@use "blocks/social.scss";
+@use "blocks/html-logo.scss";
+
+/* index */
+@use "blocks/hero.scss";
+@use "blocks/programs.scss";
+@use "blocks/advantages.scss";
+@use "blocks/example.scss";
+@use "blocks/measure.scss";
+
+/* catalog */
+@use "blocks/product.scss";
+@use "blocks/addition.scss";
+@use "blocks/gift.scss";
+
+/* form */
+@use "blocks/form.scss";

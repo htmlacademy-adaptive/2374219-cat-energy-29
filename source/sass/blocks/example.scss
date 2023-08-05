@@ -1,0 +1,22 @@
+@use "common/variables.scss";
+
+.example {
+  background-color: variables.$grey;
+}
+
+.example__title {
+  color: variables.$black;
+  font-family: variables.$oswald-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__expenses {
+  color: variables.$black;
+  font-family: variables.$oswald-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

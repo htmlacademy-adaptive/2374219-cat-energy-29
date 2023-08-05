@@ -1,0 +1,38 @@
+@use "common/variables.scss";
+
+.form {
+  font-family: variables.$oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form__input {
+  color: variables.$dark-grey;
+  font-family: variables.$oswald-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  text-transform: uppercase;
+}
+
+.form__part-title {
+  color: variables.$black;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__text {
+  color: variables.$black;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.form__note {
+  color: variables.$black;
+  font-family: variables.$lato-font;
+  font-size: 14px;
+  line-height: 16px;
+}

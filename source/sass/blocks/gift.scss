@@ -1,0 +1,15 @@
+@use "common/variables.scss";
+
+.gift {
+  color: variables.$white;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: rgba(104, 183, 56, 0.85);
+  text-align: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/mobile/gift-background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 280px;
+  height: 290px;
+}

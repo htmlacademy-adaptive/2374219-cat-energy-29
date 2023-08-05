@@ -1,0 +1,10 @@
+@use "common/variables.scss";
+
+.site-list__link {
+  font-family: variables.$oswald-font;
+  color: variables.$black;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

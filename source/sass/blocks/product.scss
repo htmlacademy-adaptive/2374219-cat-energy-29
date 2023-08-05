@@ -1,0 +1,19 @@
+@use "common/variables.scss";
+
+.product__link {
+  color: variables.$darker-grey;
+  font-family: variables.$oswald-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product__title {
+  font-weight: 400;
+}
+
+.product__feature {
+  font-size: 12px;
+  line-height: 16px;
+}

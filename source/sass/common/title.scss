@@ -1,0 +1,18 @@
+@use "variables.scss";
+
+.main-container__title {
+  font-family: variables.$oswald-font;
+  color: variables.$black;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-container__title--white {
+  color: variables.$white;
+}
+
+.main-container__title--big {
+  font-size: 36px;
+  line-height: 36px;
+}

@@ -1,0 +1,9 @@
+@use "common/variables.scss";
+
+.advantages__title {
+  color: variables.$black;
+  font-family: variables.$oswald-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
