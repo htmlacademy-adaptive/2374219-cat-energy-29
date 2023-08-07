@@ -1,0 +1,7 @@
+@use "common/variables.scss";
+
+.html-logo__link {
+  color: variables.$dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+}

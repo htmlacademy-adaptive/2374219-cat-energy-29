@@ -1,0 +1,25 @@
+@use "common/mixins.scss" as *;
+@use "common/variables.scss";
+
+.programs-item {
+  @include list;
+  background-color: variables.$light-grey;
+}
+
+.programs-item__title {
+  color: variables.$black;
+  font-family: variables.$oswald-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.programs-item__link {
+  color: variables.$black;
+  font-family: variables.$oswald-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
