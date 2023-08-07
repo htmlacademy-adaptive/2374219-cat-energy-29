@@ -1,3 +1,4 @@
+@use "common/mixins.scss" as *;
 @use "common/variables.scss";
 
 .site-list__link {
@@ -6,5 +7,9 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  text-decoration: none;
 }
+
+.site-list__item {
+  @include list;
+}
+

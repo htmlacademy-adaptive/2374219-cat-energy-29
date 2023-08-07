@@ -1,5 +1,11 @@
+@use "common/mixins.scss" as *;
 @use "common/variables.scss";
+
 
 .social {
   background-color: variables.$light-grey;
+}
+
+.social__item {
+  @include list;
 }

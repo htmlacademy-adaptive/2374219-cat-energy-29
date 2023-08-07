@@ -12,6 +12,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: variables.$dark-grey;
+    opacity: 1;
+  }
 }
 
 .form__label {

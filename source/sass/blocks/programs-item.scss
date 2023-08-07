@@ -1,6 +1,8 @@
+@use "common/mixins.scss" as *;
 @use "common/variables.scss";
 
 .programs-item {
+  @include list;
   background-color: variables.$light-grey;
 }
 
@@ -20,5 +22,4 @@
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  text-decoration: none;
 }
