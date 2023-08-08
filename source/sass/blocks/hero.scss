@@ -7,11 +7,16 @@
   background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/mobile/index-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center top;
 }
 
 .hero__text {
+  position: relative;
   font-family: variables.$oswald-font;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.hero__product-image {
+  /* position: absolute; */
 }

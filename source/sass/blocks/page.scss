@@ -1,0 +1,23 @@
+@use "common/variables.scss";
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  width: 320px;
+  min-height: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1300px;
+    padding: 0 40px;
+  }
+}
+

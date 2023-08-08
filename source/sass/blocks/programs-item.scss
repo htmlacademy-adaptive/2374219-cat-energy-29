@@ -4,6 +4,13 @@
 .programs-item {
   @include list;
   background-color: variables.$light-grey;
+  width: 280px;
+  min-height: 266px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 708px;
+    min-height: 372px;
+  }
 }
 
 .programs-item__title {
@@ -13,13 +20,32 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 30px 20px 14px 90px;
 }
 
 .programs-item__link {
+  display: inline-block;
   color: variables.$black;
   font-family: variables.$oswald-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 19px 15px 22px 20px;
+}
+
+.programs-item__text {
+  padding: 15px 33px 23px 20px;
+  margin: 0;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+}
+
+.programs__item {
+  margin-top: 20px;
 }
