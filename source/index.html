@@ -72,17 +72,19 @@
           </li>
         </ul>
       </section>
-      <section class="main-container__section example">
+      <section class="main-container__section main-container__section--grey example">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <p class="example__measure measure">
-          <span class="measure__number">5 кг</span>
-          <span class="measure__text">снижение веса</span>
-        </p>
-        <p class="example__measure measure">
-          <span class="measure__number">60 дней</span>
-          <span class="measure__text">затрачено времени</span>
-        </p>
+        <div class="example__wrapper">
+          <p class="example__measure measure">
+            <span class="measure__number">5 кг</span>
+            <span class="measure__text">снижение веса</span>
+          </p>
+          <p class="example__measure measure">
+            <span class="measure__number">60 дней</span>
+            <span class="measure__text">затрачено времени</span>
+          </p>
+        </div>
         <p class="example__expenses">Затраты на питание: 15 000 РУБ.</p>
         <div class="example__image example__image--fat">
           <img src="img/mobile/cat-fat.png" width="280" height="256" alt="Изображение кота до похудения.">
@@ -96,8 +98,8 @@
       <section class="main-footer__section address-contact">
         <h2 class="address-contact__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="address-contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="address-contact__image map" src="img/mobile/map-image.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       </section>
+      <img class="map" src="img/mobile/map-image.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
       <section class="main-footer__section social">
         <h2 class="visually-hidden">Социальные ссылки</h2>
         <a class="main-footer__logo logo--footer" href="index.html" aria-current="page">
@@ -138,7 +140,7 @@
             </a>
           </li>
         </ul>
-        <div class="html-logo">
+        <div class="social__logo html-logo">
           <a class="html-logo__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="html-logo__icon" href="https://htmlacademy.ru/intensive/adaptive">
             <svg role="img" aria-label="Логотип html-academy." xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">

@@ -1,11 +1,18 @@
 @use "common/variables.scss";
 
+.main-container__section {
+  padding: 0 20px;
+}
+
 .main-container__title {
   font-family: variables.$oswald-font;
   color: variables.$black;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 41px;
+  margin-top: 27px;
+  padding: 0 20px;
 }
 
 .main-container__title--white {
@@ -15,4 +22,9 @@
 .main-container__title--big {
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 37px;
+}
+
+.main-container__section--grey {
+  padding: 0;
 }

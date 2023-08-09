@@ -3,9 +3,30 @@
 
 
 .social {
+  display: flex;
+  flex-direction: column;
   background-color: variables.$light-grey;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .social__item {
   @include list;
+}
+
+.social__list {
+  display: flex;
+  width: 132px;
+  min-height: 22px;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 40px 74px;
+}
+
+.social__logo {
+  display: flex;
+  width: 280px;
+  min-height: 34px;
+  justify-content: space-between;
+  align-items: center;
 }

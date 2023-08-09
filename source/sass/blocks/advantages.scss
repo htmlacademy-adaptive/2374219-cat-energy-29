@@ -3,6 +3,7 @@
 
 .advantages__item {
   @include list;
+  margin-bottom: 26px;
 }
 
 .advantages__title {
@@ -11,4 +12,19 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.advantages__text {
+  width: 280px;
+  min-height: 54px;
+  margin: 0;
+  padding-left: 80px;
+}
+
+.advantages__list {
+  margin-top: 0;
+  margin-bottom: 49px;
+  padding: 0;
 }

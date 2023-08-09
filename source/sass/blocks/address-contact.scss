@@ -1,5 +1,10 @@
 @use "common/variables.scss";
 
+.address-contact {
+  display: flex;
+  margin: 26px 20px;
+}
+
 .address-contact__title {
   color: variables.$secondary-black;
   font-family: variables.$oswald-font;
@@ -7,11 +12,14 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
+  margin: 0;
 }
 
 .address-contact__text {
   line-height: 20px;
   font-style: normal;
+  width: 140px;
 }
 
 .address-contact--grey {

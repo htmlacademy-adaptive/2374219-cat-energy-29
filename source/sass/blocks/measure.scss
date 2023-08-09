@@ -1,6 +1,8 @@
 @use "common/variables.scss";
 
 .measure {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -11,9 +13,15 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+  width: 124px;
+  min-height: 56px;
+  padding: 10px;
 }
 
 .measure__text {
   font-size: 12px;
   line-height: 12px;
+  width: 77px;
+  min-height: 24px;
+  padding: 5px;
 }
