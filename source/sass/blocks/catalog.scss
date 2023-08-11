@@ -1,0 +1,5 @@
+@use "common/mixins.scss";
+
+.catalog__item {
+  @include list;
+}

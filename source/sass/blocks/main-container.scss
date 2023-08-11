@@ -1,9 +1,5 @@
 @use "common/variables.scss";
 
-.main-container__section {
-  padding: 0 20px;
-}
-
 .main-container__title {
   font-family: variables.$oswald-font;
   color: variables.$black;
@@ -12,7 +8,6 @@
   line-height: 36px;
   margin-bottom: 41px;
   margin-top: 27px;
-  padding: 0 20px;
 }
 
 .main-container__title--white {
