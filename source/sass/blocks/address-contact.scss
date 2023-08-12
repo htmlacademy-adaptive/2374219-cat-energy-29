@@ -1,6 +1,6 @@
 @use "common/variables.scss";
 
-.address-contact {
+.address-contact__container {
   display: flex;
 }
 
@@ -13,12 +13,16 @@
   text-transform: uppercase;
   width: 140px;
   margin: 0;
+  padding-top: 25px;
+  padding-bottom: 26px;
 }
 
 .address-contact__text {
   line-height: 20px;
   font-style: normal;
   width: 140px;
+  padding-top: 25px;
+  padding-bottom: 26px;
 }
 
 .address-contact--grey {

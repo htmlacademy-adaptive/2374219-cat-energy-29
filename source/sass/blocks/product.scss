@@ -3,13 +3,19 @@
 
 .product {
   @include list;
+  display: grid;
+  grid-template-columns: 140px 140px;
   font-family: variables.$oswald-font;
   font-size: 16px;
   line-height: 20px;
+  row-gap: 17px;
 }
 
 .product__link {
   color: variables.$darker-grey;
+  text-align: center;
+  min-height: 107px;
+  position: relative;
 }
 
 .product__title {
@@ -17,14 +23,55 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: left;
+}
+
+.product__title--left {
+  width: 80px;
+}
+
+.product__more {
+  text-align: center;
+}
+
+.product--more {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
 }
 
 .product__title--more {
   color: variables.$secondary-black;
+  margin: 0;
+  text-align: center;
 }
 
 .product__feature {
   font-family: variables.$lato-font;
   font-size: 12px;
   line-height: 16px;
+}
+
+.product__feature--right {
+  text-align: right;
+}
+
+.product__container {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.product__wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: repeat(2, 70px);
+}
+
+.product__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
 }

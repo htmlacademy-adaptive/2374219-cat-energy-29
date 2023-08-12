@@ -28,9 +28,7 @@
 .form__input-area {
   width: 280px;
   min-height: 150px;
-  flex-shrink: 0;
   margin: 0;
-  padding: 14px 14px 14px 15px;
 }
 
 .form__label {
@@ -89,6 +87,12 @@
 
 .form__wrapper {
   width: 280px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 15px;
 }
 
 .form__mark {

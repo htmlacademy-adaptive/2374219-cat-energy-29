@@ -2,7 +2,7 @@
 @use "common/variables.scss";
 
 .advantages__item {
-  @include list;
+
   margin-bottom: 26px;
 }
 
@@ -24,7 +24,6 @@
 }
 
 .advantages__list {
-  margin-top: 0;
+  @include list;
   margin-bottom: 49px;
-  padding: 0;
 }

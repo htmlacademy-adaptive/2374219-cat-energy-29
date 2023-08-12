@@ -2,8 +2,7 @@
 @use "common/variables.scss";
 
 .site-list {
-  padding-left: 0;
-  margin: 0;
+  @include list;
 }
 
 .site-list__link {
@@ -15,7 +14,6 @@
 }
 
 .site-list__item {
-  @include list;
   text-align: center;
   margin-bottom: 46px;
 }

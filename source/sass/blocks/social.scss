@@ -9,16 +9,12 @@
   text-align: center;
 }
 
-.social__item {
-  @include list;
-}
-
 .social__list {
+  @include list;
   display: flex;
   width: 132px;
   min-height: 22px;
   justify-content: space-between;
-  padding-left: 0;
   margin: 40px 74px;
 }
 
@@ -28,4 +24,9 @@
   min-height: 34px;
   justify-content: space-between;
   align-items: center;
+}
+
+.social__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }

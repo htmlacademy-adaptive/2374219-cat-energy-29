@@ -1,5 +1,10 @@
-@use "common/mixins.scss";
+@use "common/mixins.scss" as *;
+
+.catalog__list {
+  @include list;
+}
 
 .catalog__item {
-  @include list;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }

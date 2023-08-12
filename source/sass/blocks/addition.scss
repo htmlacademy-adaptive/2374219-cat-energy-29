@@ -15,12 +15,23 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  grid-column: 1/3;
 }
 
 .addition__text {
   line-height: 14px;
 }
 
-.addition__item {
+.addition__text--right {
+  text-align: right;
+}
+
+.addition__list {
   @include list;
+}
+
+.addition__item {
+  display: grid;
+  row-gap: 15px;
+  margin-bottom: 32px;
 }
