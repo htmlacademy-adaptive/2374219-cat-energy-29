@@ -12,10 +12,15 @@
 .social__list {
   @include list;
   display: flex;
-  width: 132px;
+  width: 168px;
   min-height: 22px;
   justify-content: space-between;
   margin: 40px 74px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0;
+    width: 132px;
+  }
 }
 
 .social__logo {
@@ -24,9 +29,20 @@
   min-height: 34px;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 168px;
+  }
 }
 
 .social__container {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

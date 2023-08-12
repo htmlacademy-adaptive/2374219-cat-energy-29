@@ -2,8 +2,43 @@
 @use "common/variables.scss";
 
 .advantages__item {
-
   margin-bottom: 26px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 280px;
+  }
+}
+
+.advantages__item--first {
+  @media (min-width: variables.$tablet-width) {
+    width: 230px;
+  }
+}
+
+.advantages__item--second {
+  @media (min-width: variables.$tablet-width) {
+    width: 246px;
+  }
+}
+
+.advantages__item--third {
+  @media (min-width: variables.$tablet-width) {
+    width: 247px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 248px;
+  }
+}
+
+.advantages__item--fourth {
+  @media (min-width: variables.$tablet-width) {
+    width: 247px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 250px;
+  }
 }
 
 .advantages__title {
@@ -14,6 +49,12 @@
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 42px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__text {
@@ -21,9 +62,45 @@
   min-height: 54px;
   margin: 0;
   padding-left: 80px;
+  position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 151px 26px 57px 0;
+  }
+}
+
+.advantages__text::before {
+  @include pseudo;
+  background-color: variables.$green;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: -2px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 31px;
+  }
 }
 
 .advantages__list {
   @include list;
-  margin-bottom: 49px;
+  margin-bottom: 29px;
+  padding-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    column-gap: 137px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0;
+  }
 }

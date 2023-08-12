@@ -2,6 +2,14 @@
 
 .example {
   background-color: variables.$grey;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: variables.$white;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: variables.$grey;
+  }
 }
 
 .example__title {
@@ -12,6 +20,16 @@
   font-weight: 400;
   margin: 0;
   padding: 25px 20px 40px 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__expenses {

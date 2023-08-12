@@ -2,6 +2,12 @@
 
 .address-contact__container {
   display: flex;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    justify-content: space-between;
+    padding: 0 70px;
+  }
 }
 
 .address-contact__title {
@@ -15,6 +21,14 @@
   margin: 0;
   padding-top: 25px;
   padding-bottom: 26px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+    margin: 61px 40px;
+    padding: 0;
+  }
 }
 
 .address-contact__text {
@@ -23,6 +37,14 @@
   width: 140px;
   padding-top: 25px;
   padding-bottom: 26px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    width: 157px;
+    margin: 61px 40px;
+    padding: 0;
+    text-align: right;
+  }
 }
 
 .address-contact--grey {

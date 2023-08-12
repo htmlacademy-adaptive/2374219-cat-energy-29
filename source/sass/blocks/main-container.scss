@@ -18,6 +18,12 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 37px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .main-container__section--grey {
