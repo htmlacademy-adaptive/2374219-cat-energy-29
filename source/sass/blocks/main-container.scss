@@ -6,12 +6,18 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin-bottom: 41px;
-  margin-top: 27px;
 }
 
 .main-container__title--white {
   color: variables.$white;
+  padding: 27px 20px 25px 20px;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    color: variables.$black;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-container__title--big {

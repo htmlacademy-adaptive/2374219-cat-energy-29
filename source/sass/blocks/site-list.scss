@@ -3,6 +3,13 @@
 
 .site-list {
   @include list;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    width: 436px;
+    margin-top: 39px;
+    justify-content: space-between;
+  }
 }
 
 .site-list__link {
@@ -11,6 +18,17 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    color: variables.$white;
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .site-list__item {

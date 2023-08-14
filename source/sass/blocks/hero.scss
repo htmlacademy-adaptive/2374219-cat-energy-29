@@ -1,13 +1,20 @@
 @use "common/variables.scss";
 
 .hero {
-  color: variables.$white;
+  /* color: variables.$white;
   background-color: rgba(variables.$green, 0.85);
   text-align: center;
   background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/mobile/index-background.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center top;
+  background-position: center top; */
+  position: relative;
+  color: variables.$white;
+  text-align: center;
+  background-image: linear-gradient(rgba(variables.$green-hero) 100%, rgba(variables.$white) 60%), url("../img/mobile/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 63%;
+  background-position: center 0;
 }
 
 .hero__text {
@@ -15,8 +22,6 @@
   font-family: variables.$oswald-font;
   line-height: 14px;
   text-transform: uppercase;
-}
-
-.hero__product-image {
-  /* position: absolute; */
+  margin: 0;
+  padding: 0 62px 29px 60px;
 }

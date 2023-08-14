@@ -1,0 +1,7 @@
+@use "common/variables.scss";
+
+.main-nav__toggle {
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+@use "common/variables.scss";
+
+.main-header__container {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.main-header__logo {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    margin-top: 25px;
+  }
+}
