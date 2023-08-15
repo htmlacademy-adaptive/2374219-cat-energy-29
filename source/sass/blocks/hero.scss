@@ -1,20 +1,14 @@
 @use "common/variables.scss";
 
 .hero {
-  /* color: variables.$white;
-  background-color: rgba(variables.$green, 0.85);
-  text-align: center;
-  background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/mobile/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top; */
   position: relative;
   color: variables.$white;
   text-align: center;
-  background-image: linear-gradient(rgba(variables.$green-hero) 100%, rgba(variables.$white) 60%), url("../img/mobile/index-background.jpg");
+  background-image: linear-gradient(rgba(variables.$green, 0.85) 100%, rgba(variables.$white, 0.85) 60%), url("../img/mobile/index-background.png");
   background-repeat: no-repeat;
   background-size: auto 63%;
   background-position: center 0;
+  padding: 20px;
 }
 
 .hero__text {
@@ -23,5 +17,5 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 62px 29px 60px;
+  padding: 0 32px 29px 30px;
 }
