@@ -3,12 +3,10 @@
 
 .product {
   @include list;
-  display: grid;
-  grid-template-columns: 140px 140px;
   font-family: variables.$oswald-font;
   font-size: 16px;
   line-height: 20px;
-  row-gap: 17px;
+
 
   @media (min-width: variables.$tablet-width) {
     background-color: variables.$light-grey;
@@ -28,7 +26,6 @@
   color: variables.$darker-grey;
   text-align: center;
   min-height: 107px;
-  position: relative;
 }
 
 .product__title {
@@ -45,9 +42,6 @@
 
 .product__more {
   text-align: center;
-}
-
-.product--more {
   display: flex;
   flex-direction: column;
   row-gap: 21px;
@@ -80,11 +74,8 @@
   grid-template-columns: repeat(2, 70px);
 }
 
-.product__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+.product__item {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 17px;
 }

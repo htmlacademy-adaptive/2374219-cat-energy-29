@@ -10,13 +10,15 @@
 
 .main-container__title--white {
   color: variables.$white;
-  padding: 27px 20px 25px 20px;
+  padding: 27px 10px 25px 10px;
   margin: 0;
 
   @media (min-width: variables.$tablet-width) {
     color: variables.$black;
     font-size: 60px;
     line-height: 60px;
+    width: 530px;
+    padding-left: 100px;
   }
 }
 
