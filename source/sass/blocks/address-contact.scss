@@ -1,15 +1,5 @@
 @use "common/variables.scss";
 
-.address-contact__container {
-  display: flex;
-
-  @media (min-width: variables.$tablet-width) {
-    width: 768px;
-    justify-content: space-between;
-    padding: 0 70px;
-  }
-}
-
 .address-contact__title {
   color: variables.$secondary-black;
   font-family: variables.$oswald-font;
@@ -29,6 +19,11 @@
     margin: 61px 40px;
     padding: 0;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .address-contact__text {
@@ -45,8 +40,44 @@
     padding: 0;
     text-align: right;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .address-contact--grey {
   background-color: variables.$light-grey;
+}
+
+.address-contact__container {
+  display: flex;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    justify-content: space-between;
+    padding: 0 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    background-color: variables.$white;
+    width: 565px;
+    min-height: 199px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: calc(50% + 60px);
+    top: 95px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.address-contact {
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+  }
 }

@@ -13,9 +13,11 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  width: 124px;
+  width: 108px;
   min-height: 56px;
-  padding: 10px;
+  padding-top: 14px;
+  border: 1px solid variables.$grey-measure;
+  border-radius: 2px;
 }
 
 .measure__text {
@@ -23,5 +25,8 @@
   line-height: 12px;
   width: 77px;
   min-height: 24px;
-  padding: 5px;
+  position: absolute;
+  top: 46px;
+  background-color: variables.$grey;
+  margin-left: 15px;
 }

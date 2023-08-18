@@ -1,1 +1,8 @@
 @use "common/variables.scss";
+
+.logo__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

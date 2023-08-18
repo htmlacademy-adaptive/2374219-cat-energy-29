@@ -33,5 +33,15 @@
 
 .site-list__item {
   text-align: center;
-  margin-bottom: 46px;
+  padding: 22px 40px 24px 40px;
+  position: relative;
+}
+
+.site-list__item::before {
+  @include pseudo;
+  width: 320px;
+  height: 1px;
+  background-color: variables.$grey-header;
+  left: calc(-10% + 7px);
+  top: 0;
 }

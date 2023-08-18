@@ -37,5 +37,9 @@
     background-color: variables.$light-grey;
     min-width: 280px;
     min-height: 40px;
+
+    @media (min-width: variables.$tablet-width) {
+      min-width: auto;
+    }
   }
 }

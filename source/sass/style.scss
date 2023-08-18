@@ -6,14 +6,13 @@
 @use "common/visually-hidden.scss";
 
 /* base */
+@use "blocks/container.scss";
 @use "blocks/address-contact.scss";
 @use "blocks/button.scss";
-@use "blocks/container.scss";
 @use "blocks/html-logo.scss";
 @use "blocks/logo.scss";
 @use "blocks/main-container.scss";
 @use "blocks/main-header.scss";
-@use "blocks/main-nav.scss";
 @use "blocks/main-footer.scss";
 @use "blocks/site-list.scss";
 @use "blocks/social.scss";
