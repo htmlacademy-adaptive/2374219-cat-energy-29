@@ -26,6 +26,7 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 37px;
+  margin-top: 27px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
@@ -36,4 +37,8 @@
 
 .main-container__section--grey {
   padding: 0;
+}
+
+.main-container__catalog {
+  margin-bottom: 41px;
 }

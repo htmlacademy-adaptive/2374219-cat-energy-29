@@ -22,6 +22,10 @@
   }
 }
 
+.main-header__container--bottom {
+  border-bottom: 1px solid variables.$grey-lines;
+}
+
 .main-header__toggle {
   height: 24px;
   width: 24px;

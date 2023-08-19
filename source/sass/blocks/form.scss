@@ -47,14 +47,20 @@
   text-transform: uppercase;
   align-items: center;
   text-align: left;
+  position: relative;
 }
 
 .form__part-title {
-  display: relative;
   color: variables.$black;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  background-color: variables.$white;
+  margin: 0;
+  transform: translateY(-65%);
 
   @media (min-width: variables.$tablet-width) {
     font-size: 36px;
@@ -63,15 +69,34 @@
 }
 
 .form__part-title--contact {
-  margin-bottom: 35px;
+  width: 227px;
+  padding-right: 20px;
+  transform: translateY(-35%);
+}
+
+.form__item-wrapper--contact {
+  margin-top: 44px;
+  margin-bottom: 17px;
+}
+
+.form__item-wrapper--comment {
+  margin-top: 24px;
+  margin-bottom: 21px;
+}
+
+.form__item-wrapper--adds {
+  margin-top: 35px;
+  margin-bottom: 17px;
 }
 
 .form__part-title--comment {
-  margin-bottom: 38px;
+  width: 161px;
+  padding-right: 20px;
 }
 
 .form__part-title--adds {
-  margin-bottom: 40px;
+  width: 181px;
+  padding-right: 20px;
 }
 
 .form__text {
@@ -85,24 +110,12 @@
   }
 }
 
-
 .form__note {
   color: variables.$black;
   font-family: variables.$lato-font;
   font-size: 14px;
   line-height: 16px;
-}
-
-.form__item--radio {
-  min-height: 116px;
-  margin-bottom: 20px;
-  padding-top: 29px;
-  border-top: 1px solid variables.$grey-lines;
-  border-bottom: 1px solid variables.$grey-lines;
-}
-
-.form__item--comment {
-  margin-bottom: 23px;
+  margin-top: 21px;
 }
 
 .form__wrapper {
@@ -116,19 +129,59 @@
 
 .form__mark {
   margin-bottom: 25px;
+  padding-left: 45px;
 }
 
 .form__check {
-  margin-bottom: 19px;
-}
-
-.form__item--line::after {
-  @include pseudo;
-  width: 100%;
-  height: 2px;
-  background-color: variables.$green;
+  margin-bottom: 23px;
+  padding-left: 45px;
 }
 
 .form__button {
   width: 100%;
+}
+
+.form__item-wrapper {
+  border-top: 2px solid variables.$green;
+  z-index: -2;
+}
+
+.form__item-container {
+  padding: 0;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid variables.$grey-measure;
+  top: -6px;
+}
+
+.form__box[type="checkbox"]:checked + .form__checkbox {
+  background-image: url("../img/mobile/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 7px;
+}
+
+.form__radio-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid variables.$grey-measure;
+  border-radius: 50%;
+  left: 0;
+  top: -6px;
+}
+
+.form__radio[type="radio"]:checked + .form__radio-mark::after {
+  @include pseudo;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  background-color: variables.$green;
+  border-radius: 50%;
 }
