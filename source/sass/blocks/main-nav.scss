@@ -1,3 +1,15 @@
+@use "common/variables.scss";
+
 .main-nav--closed {
   display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.main-nav__list {
+  position: relative;
 }

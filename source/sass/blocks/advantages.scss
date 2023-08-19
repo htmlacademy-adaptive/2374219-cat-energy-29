@@ -89,7 +89,6 @@
 
 .advantages__list {
   @include list;
-  margin-bottom: 29px;
   padding-bottom: 20px;
 
   @media (min-width: variables.$tablet-width) {

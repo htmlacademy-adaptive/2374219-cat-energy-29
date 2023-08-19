@@ -13,6 +13,19 @@
   min-height: 40px;
   border: none;
 
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+    width: auto;
+    min-height: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+    width: 169px;
+    min-height: 40px;
+    margin-left: 38px;
+  }
+
   &--index {
     display: block;
     font-size: 14px;
@@ -40,6 +53,17 @@
 
     @media (min-width: variables.$tablet-width) {
       min-width: auto;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-left: 0;
+    }
+  }
+
+  &--adds {
+    @media (min-width: variables.$desktop-width) {
+      width: 192px;
+      height: 26px;
     }
   }
 }

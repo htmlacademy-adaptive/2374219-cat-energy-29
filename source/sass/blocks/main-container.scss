@@ -33,12 +33,28 @@
     line-height: 60px;
     margin-bottom: 54px;
   }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 70px;
+    margin-left: 0;
+  }
 }
 
 .main-container__section--grey {
   padding: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    border-top: 1px solid variables.$grey-header;
+  }
 }
 
 .main-container__catalog {
   margin-bottom: 41px;
+}
+
+.main-container-adds {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    width: 1221px;
+  }
 }

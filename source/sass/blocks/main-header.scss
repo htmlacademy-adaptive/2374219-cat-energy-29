@@ -5,7 +5,7 @@
   @media (min-width: variables.$tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    margin: 0;
   }
 }
 
@@ -17,13 +17,19 @@
   align-items: center;
 
   @media (min-width: variables.$tablet-width) {
-    display: flex;
     margin-top: 25px;
+    position: relative;
+    width: 174px;
+    min-height: 50px;
   }
 }
 
 .main-header__container--bottom {
   border-bottom: 1px solid variables.$grey-lines;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
 }
 
 .main-header__toggle {

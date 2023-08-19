@@ -34,17 +34,45 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 170px 55px 20px 60px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 151px 52px 23px 53px;
+  }
 }
 
 .product__title--left {
   width: 80px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 135px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    width: 140px;
+  }
 }
 
 .product__more {
   text-align: center;
   display: flex;
   flex-direction: column;
-  row-gap: 21px;
+  row-gap: 82px;
+  margin-bottom: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: auto;
+    padding: 0;
+  }
 
   @media (min-width: variables.$desktop-width) {
     width: auto;
@@ -54,18 +82,35 @@
 
 .product--more {
   border-bottom: 1px solid variables.$grey-product;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: variables.$white;
+    border-bottom: unset;
+  }
 }
 
 .product__title--more {
   color: variables.$secondary-black;
   margin: 0;
   text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 237px;
+    width: 134px;
+  }
 }
 
 .product__feature {
   font-family: variables.$lato-font;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 1px solid variables.$grey-measure;
+    padding-bottom: 4px;
+  }
 }
 
 .product__feature--right {
@@ -75,12 +120,27 @@
 .product__container {
   grid-column: 2/3;
   grid-row: 1/2;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .product__wrapper {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   grid-template-columns: repeat(2, 70px);
+
+  @media (min-width: variables.$tablet-width) {
+    width: 250px;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 169px;
+    grid-template-columns: repeat(2, auto);
+    margin-left: 38px;
+  }
 }
 
 .product__item {
@@ -88,10 +148,33 @@
   grid-template-columns: 140px 140px;
   row-gap: 17px;
 
+  @media (min-width: variables.$tablet-width) {
+    width: auto;
+    padding: 0;
+    display: block;
+  }
 
   @media (min-width: variables.$desktop-width) {
     width: auto;
     padding: 0;
     display: block;
+  }
+}
+
+.product__feature--more {
+  @media (min-width: variables.$tablet-width) {
+    display: block;
+    border: unset;
+    width: 170px;
+    padding: 0;
+  }
+}
+
+.product__more-name {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 23px;
   }
 }

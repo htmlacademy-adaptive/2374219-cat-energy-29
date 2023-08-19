@@ -22,13 +22,13 @@
         <nav class="main-nav main-nav--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
+              <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="site-list__item">
+              <li class="site-list__item site-list__item--current">
                 <a class="site-list__link" href="form.html" aria-current="page">Подбор программы</a>
               </li>
             </ul>
@@ -41,7 +41,7 @@
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="form__text container">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div class="form__item">
-          <div class="container">
+          <div class="form__container container">
             <h3 class="visually-hidden">Основная информация о коте</h3>
             <div class="form__wrapper">
               <label class="form__label">Имя:*
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="form__item">
-          <div class="container">
+          <div class="form__container container">
             <h3 class="visually-hidden">Выбор программы:</h3>
             <label class="form__label">
               <input class="form__radio visually-hidden" type="radio" name="program" value="weight-loss" checked>
@@ -80,13 +80,13 @@
             </label>
           </div>
         </div>
-        <div class="form__item">
+        <div class="form__container form__item">
           <div class="form__item-wrapper form__item-wrapper--contact">
             <div class="form__item-container container">
               <h3 class="form__part-title form__part-title--contact">Контактные данные (владельца кота)</h3>
             </div>
           </div>
-          <div class="container">
+          <div class="form__container container">
             <div class="form__wrapper">
               <label class="form__label">E-mail:*
                 <input class="form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
@@ -99,25 +99,25 @@
             </div>
           </div>
         </div>
-        <div class="form__item">
+        <div class="form__container form__item">
           <div class="form__item-wrapper form__item-wrapper--comment">
             <div class="form__item-container container">
               <h3 class="form__part-title form__part-title--comment">Комментарий</h3>
             </div>
           </div>
-          <div class="container">
+          <div class="form__container container">
             <label class="form__label">
               <textarea class="form__input form__input-area" name="cat-description" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
         </div>
-        <div class="form__item">
+        <div class="form__container form__item">
           <div class="form__item-wrapper form__item-wrapper--adds">
             <div class="form__item-container container">
               <h3 class="form__part-title form__part-title--adds">Дополнительно</h3>
             </div>
           </div>
-          <div class="container">
+          <div class="form__container container">
             <label class="form__label">
               <input class="form__box visually-hidden" type="checkbox" name="additions" value="sweetener" checked>
               <span class="form__checkbox"></span>

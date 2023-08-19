@@ -7,8 +7,12 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 26px;
-  margin-bottom: 36px;
+  margin: 0;
+  width: 246px;
+  padding-right: 20px;
+  transform: translateY(-70%);
+  position: relative;
+  background-color: variables.$white;
 }
 
 .addition__product {
@@ -38,8 +42,49 @@
   border-top: 1px solid variables.$grey-measure;
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .addition__item--bottom {
   border-bottom: 1px solid variables.$grey-measure;
+
+  @media (min-width: variables.$tablet-width) {
+    border: unset;
+  }
+}
+
+.addition__wrapper {
+  border-top: 2px solid variables.$green;
+  z-index: -2;
+}
+
+.addition__item--top {
+  margin-top: 26px;
+
+  @media (min-width: variables.$tablet-width) {
+    border: unset;
+    margin: 0;
+  }
+}
+
+.addition__container {
+  @media (min-width: variables.$tablet-width) {
+    border: 1px solid variables.$grey-measure;
+    width: 708px;
+    margin-top: 70px;
+  }
+}
+
+.addition {
+  @media (min-width: variables.$desktop-width) {
+    border: none;
+    width: 895px;
+    margin-top: 76px;
+    padding: 0;
+    margin-bottom: 87px;
+  }
 }
