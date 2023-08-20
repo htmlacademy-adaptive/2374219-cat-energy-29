@@ -51,8 +51,14 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 285px;
+    width: 330px;
     margin-top: 55px;
+  }
+}
+
+.example__expenses-number {
+  @media (min-width: variables.$desktop-width) {
+    margin-left: 63px;
   }
 }
 

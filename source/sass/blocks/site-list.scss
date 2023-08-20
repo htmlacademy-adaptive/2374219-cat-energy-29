@@ -50,14 +50,14 @@
   top: 0;
 
   @media (min-width: variables.$tablet-width) {
-    background: none;
+    display: none;
   }
 }
 
 .site-list__item--current::after {
   @media (min-width: variables.$tablet-width) {
     @include pseudo;
-    width: auto;
+    width: 100%;
     height: 2px;
     background-color: variables.$green;
     left: 0;

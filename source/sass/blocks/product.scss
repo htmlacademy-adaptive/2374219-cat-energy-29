@@ -178,3 +178,9 @@
     row-gap: 23px;
   }
 }
+
+.product__button {
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 auto;
+  }
+}

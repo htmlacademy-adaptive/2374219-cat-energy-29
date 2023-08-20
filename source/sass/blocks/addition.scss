@@ -8,11 +8,20 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  width: 246px;
+  width: 266px;
   padding-right: 20px;
   transform: translateY(-70%);
   position: relative;
   background-color: variables.$white;
+  padding-left: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 40px;
+    width: 423px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 40px;
+  }
 }
 
 .addition__product {
@@ -82,9 +91,16 @@
 .addition {
   @media (min-width: variables.$desktop-width) {
     border: none;
-    width: 895px;
     margin-top: 76px;
     padding: 0;
     margin-bottom: 87px;
+  }
+}
+
+.addition__container-title {
+  padding-left: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 30px;
   }
 }

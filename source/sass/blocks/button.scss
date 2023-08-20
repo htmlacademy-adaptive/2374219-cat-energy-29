@@ -17,13 +17,13 @@
     display: block;
     width: auto;
     min-height: 40px;
+    font-size: 20px;
   }
 
   @media (min-width: variables.$desktop-width) {
     display: block;
     width: 169px;
     min-height: 40px;
-    margin-left: 38px;
   }
 
   &--index {

@@ -37,11 +37,12 @@
       </div>
     </header>
     <main class="main-container">
-      <h1 class="main-container__title main-container__title--big container">Подбор программы</h1>
+      <h1 class="main-container__title main-container__title--big">Подбор программы</h1>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form__text container">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="form__item-box">
         <div class="form__item">
-          <div class="form__container container">
+          <div class="form__container form__container--info container">
             <h3 class="visually-hidden">Основная информация о коте</h3>
             <div class="form__wrapper">
               <label class="form__label">Имя:*
@@ -61,26 +62,29 @@
           </div>
         </div>
         <div class="form__item">
-          <div class="form__container container">
-            <h3 class="visually-hidden">Выбор программы:</h3>
-            <label class="form__label">
-              <input class="form__radio visually-hidden" type="radio" name="program" value="weight-loss" checked>
-              <span class="form__radio-mark"></span>
-              <span class="form__mark">Похудение</span>
-            </label>
-            <label class="form__label">
-              <input class="form__radio visually-hidden" type="radio" name="program" value="weight-gain">
-              <span class="form__radio-mark"></span>
-              <span class="form__mark">Набор массы</span>
-            </label>
-            <label class="form__label">
-              <input class="form__radio visually-hidden" type="radio" name="program" value="no-info">
-              <span class="form__radio-mark"></span>
-              <span class="form__mark">Не знаю (нужен ваш совет)</span>
-            </label>
+          <div class="form__container container form__container--flex">
+            <div class="form__container--border">
+              <h3 class="visually-hidden">Выбор программы:</h3>
+              <label class="form__label">
+                <input class="form__radio visually-hidden" type="radio" name="program" value="weight-loss" checked>
+                <span class="form__radio-mark"></span>
+                <span class="form__mark">Похудение</span>
+              </label>
+              <label class="form__label">
+                <input class="form__radio visually-hidden" type="radio" name="program" value="weight-gain">
+                <span class="form__radio-mark"></span>
+                <span class="form__mark">Набор массы</span>
+              </label>
+              <label class="form__label">
+                <input class="form__radio visually-hidden" type="radio" name="program" value="no-info">
+                <span class="form__radio-mark"></span>
+                <span class="form__mark">Не знаю (нужен ваш совет)</span>
+              </label>
+            </div>
           </div>
         </div>
-        <div class="form__container form__item">
+        </div>
+        <div class="form__item">
           <div class="form__item-wrapper form__item-wrapper--contact">
             <div class="form__item-container container">
               <h3 class="form__part-title form__part-title--contact">Контактные данные (владельца кота)</h3>
@@ -99,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="form__container form__item">
+        <div class="form__item">
           <div class="form__item-wrapper form__item-wrapper--comment">
             <div class="form__item-container container">
               <h3 class="form__part-title form__part-title--comment">Комментарий</h3>
@@ -111,13 +115,13 @@
             </label>
           </div>
         </div>
-        <div class="form__container form__item">
+        <div class="form__item">
           <div class="form__item-wrapper form__item-wrapper--adds">
             <div class="form__item-container container">
               <h3 class="form__part-title form__part-title--adds">Дополнительно</h3>
             </div>
           </div>
-          <div class="form__container container">
+          <div class="form__container container form__container--box">
             <label class="form__label">
               <input class="form__box visually-hidden" type="checkbox" name="additions" value="sweetener" checked>
               <span class="form__checkbox"></span>
@@ -141,9 +145,11 @@
           </div>
         </div>
         <div class="form__wrapper">
-          <div class="container">
-            <button class="form__button button" type="submit">Отправить заявку</button>
-            <p class="form__note">* — Обязательные поля</p>
+          <div class="form__container container">
+            <div class="form__container--button">
+              <button class="form__button button" type="submit">Отправить заявку</button>
+              <p class="form__note">* — Обязательные поля</p>
+            </div>
           </div>
         </div>
       </form>
