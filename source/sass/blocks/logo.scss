@@ -1,0 +1,15 @@
+@use "common/variables.scss";
+
+.logo__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: variables.$tablet-width) {
+    right: 0;
+    left: unset;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}

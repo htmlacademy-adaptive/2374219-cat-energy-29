@@ -1,6 +1,8 @@
 @use "common/variables.scss";
 
 .measure {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -11,9 +13,37 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
+  width: 108px;
+  min-height: 56px;
+  padding-top: 14px;
+  border: 1px solid variables.$grey-measure;
+  border-radius: 2px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    min-height: 77px;
+  }
 }
 
 .measure__text {
   font-size: 12px;
   line-height: 12px;
+  width: 77px;
+  min-height: 24px;
+  position: absolute;
+  top: 46px;
+  background-color: variables.$grey;
+  margin-left: 15px;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: variables.$white;
+    top: 68px;
+    width: 129px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: variables.$light-grey;
+  }
 }

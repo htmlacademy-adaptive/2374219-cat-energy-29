@@ -4,6 +4,18 @@
 .programs-item {
   @include list;
   background-color: variables.$light-grey;
+  width: 280px;
+  min-height: 266px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 708px;
+    min-height: 372px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 570px;
+    min-height: 374px;
+  }
 }
 
 .programs-item__title {
@@ -13,13 +25,92 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 30px 20px 14px 90px;
+  position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 77px 400px 24px 53px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 77px 120px 73px 214px;
+  }
+}
+
+.programs-item__title::before {
+  @include pseudo;
+  width: 50px;
+  height: 50px;
+  background-color: variables.$green;
+  border-radius: 50%;
+  left: 20px;
+  top: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: 445px;
+    top: 92px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 47px;
+    top: 52px;
+  }
 }
 
 .programs-item__link {
+  display: inline-block;
   color: variables.$black;
   font-family: variables.$oswald-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 19px 15px 22px 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: auto;
+    padding: 0 15px 57px 52px;
+    font-size: 20px;
+  }
+}
+
+.programs-item__text {
+  padding: 15px 33px 23px 20px;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 316px 52px 52px;
+    width: 708px;
+    min-height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 0 61px 27px 52px;
+    width: 570px;
+    min-height: 72px;
+  }
+}
+
+.programs__list {
+  @include list;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programs__item {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

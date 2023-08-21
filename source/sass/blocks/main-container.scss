@@ -10,9 +10,47 @@
 
 .main-container__title--white {
   color: variables.$white;
+  padding: 27px 10px 25px 10px;
+  margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    color: variables.$black;
+    font-size: 60px;
+    line-height: 60px;
+    width: 530px;
+    padding-left: 100px;
+  }
 }
 
 .main-container__title--big {
   font-size: 36px;
   line-height: 36px;
+  padding: 27px 20px 37px 20px;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 768px;
+    padding: 0 70px 54px 70px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 60px 40px 55px 40px;
+    margin: 0 auto;
+    width: 1300px;
+  }
+}
+
+.main-container__section--grey {
+  padding: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    border-top: 1px solid variables.$grey-header;
+  }
+}
+
+.main-container__catalog {
+  margin-bottom: 41px;
 }

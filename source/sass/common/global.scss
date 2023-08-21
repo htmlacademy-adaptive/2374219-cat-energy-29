@@ -18,8 +18,14 @@ body {
   color: variables.$dark-grey;
   line-height: 18px;
   background-color: variables.$white;
+  min-width: 320px;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.page {
+  height: 100%;
 }

@@ -1,0 +1,74 @@
+@use "common/mixins.scss" as *;
+@use "common/variables.scss";
+
+.main-header__container {
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-header__logo {
+  position: relative;
+  margin: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 25px;
+    position: relative;
+    width: 174px;
+    min-height: 50px;
+  }
+}
+
+.main-header__container--bottom {
+  border-bottom: 1px solid variables.$grey-lines;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
+}
+
+.main-header__toggle {
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle-line {
+  width: 24px;
+  border-top: 1px solid variables.$black;
+  border-bottom: 1px solid variables.$black;
+  position: relative;
+}
+
+.main-header__toggle-line::before {
+  @include pseudo;
+  width: 24px;
+  border-top: 1px solid variables.$black;
+  border-bottom: 1px solid variables.$black;
+  top: 0;
+  left: 0;
+  transform: rotate(0) translateY(-8px);
+}
+
+.main-header__toggle-line::after {
+  @include pseudo;
+  width: 24px;
+  border-top: 1px solid variables.$black;
+  border-bottom: 1px solid variables.$black;
+  top: 0;
+  left: 0;
+  transform: rotate(0) translateY(6px);
+}

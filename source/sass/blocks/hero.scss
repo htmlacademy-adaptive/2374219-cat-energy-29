@@ -1,17 +1,43 @@
 @use "common/variables.scss";
 
 .hero {
+  position: relative;
   color: variables.$white;
-  background-color: rgba(variables.$green, 0.85);
   text-align: center;
-  background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/mobile/index-background.jpg");
+  background-image: linear-gradient(rgba(variables.$green, 0.85) 100%, rgba(variables.$white, 0.85) 60%), url("../img/mobile/index-background.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: auto 63%;
+  background-position: center 0;
+  padding: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    color: variables.$black;
+    background-image: none;
+    text-align: left;
+  }
 }
 
 .hero__text {
+  position: relative;
   font-family: variables.$oswald-font;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0 32px 29px 30px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    width: 483px;
+    padding-left: 100px;
+    position: relative;
+    padding-top: 10px;
+  }
+}
+
+.hero__product-image {
+  @media (min-width: variables.$tablet-width) {
+    width: 609px;
+    height: 509px;
+  }
 }
