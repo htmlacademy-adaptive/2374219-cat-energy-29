@@ -44,17 +44,17 @@
         <div class="form__item">
           <div class="form__container form__container--info container">
             <h3 class="visually-hidden">Основная информация о коте</h3>
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--main">
               <label class="form__label">Имя:*
                 <input class="form__input" type="text" name="name" placeholder="Барсик" required>
               </label>
             </div>
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--main">
               <label class="form__label">Вес (кг):*
                 <input class="form__input" type="number" name="weight" placeholder="7" required>
               </label>
             </div>
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--main">
               <label class="form__label">Возраст (лет):*
                 <input class="form__input" type="number" name="age" placeholder="7" required>
               </label>
@@ -90,13 +90,13 @@
               <h3 class="form__part-title form__part-title--contact">Контактные данные (владельца кота)</h3>
             </div>
           </div>
-          <div class="form__container container">
-            <div class="form__wrapper">
+          <div class="form__container form__container--contact container">
+            <div class="form__wrapper form__wrapper--contact">
               <label class="form__label">E-mail:*
                 <input class="form__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
               </label>
             </div>
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--contact">
               <label class="form__label">Телефон:*
                 <input class="form__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
               </label>
@@ -140,7 +140,7 @@
             <label class="form__label">
               <input class="form__box visually-hidden" type="checkbox" name="additions" value="vitamins">
               <span class="form__checkbox"></span>
-              <span class="form__check">Витамины</span>
+              <span class="form__check form__check--last">Витамины</span>
             </label>
           </div>
         </div>
