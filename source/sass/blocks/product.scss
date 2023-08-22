@@ -14,6 +14,7 @@
     height: 511px;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(variables.$white 40px, variables.$light-grey 40px);
   }
 
   @media (min-width: variables.$desktop-width) {

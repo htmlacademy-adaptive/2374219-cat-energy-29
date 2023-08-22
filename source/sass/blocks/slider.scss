@@ -1,0 +1,11 @@
+@use "common/variables.scss";
+
+.slider {
+  height: 256px;
+  width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 512px;
+    width: 560px;
+  }
+}

@@ -43,6 +43,10 @@
       font-size: 20px;
       line-height: 54px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+      bottom: 250px;
+    }
   }
 
   &--grey {

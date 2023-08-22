@@ -4,11 +4,11 @@
   background-color: variables.$grey;
 
   @media (min-width: variables.$tablet-width) {
-    background-color: variables.$white;
+    background-image: linear-gradient(variables.$white 0, variables.$white 384px, variables.$grey 384px, variables.$grey 1080px);
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-color: variables.$light-grey;
+    background-image: linear-gradient(variables.$white 0, variables.$white 136px, variables.$light-grey 136px, variables.$light-grey 600px);
   }
 }
 
@@ -98,9 +98,26 @@
 
 .example__image {
   padding: 0 20px 40px 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/mobile/cat-slim.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    width: 560px;
+    padding: 0 0 101px 0;
+    min-height: 512px;
+  }
 }
 
-.example__wrapper--tablet {
+.example__image-cat {
+  @media (min-width: variables.$tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.example__wrapper-tablet {
   @media (min-width: variables.$tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -108,5 +125,27 @@
 
   @media (min-width: variables.$desktop-width) {
     display: block;
+  }
+}
+
+.example__slider {
+  margin: 0 auto;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
+}
+
+.example__wrapper-desktop {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__container {
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 560px;
   }
 }

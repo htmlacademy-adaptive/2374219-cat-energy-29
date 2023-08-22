@@ -20,6 +20,10 @@
     width: 530px;
     padding-left: 100px;
   }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-top: 114px;
+  }
 }
 
 .main-container__title--big {
@@ -54,4 +58,3 @@
 .main-container__catalog {
   margin-bottom: 41px;
 }
-

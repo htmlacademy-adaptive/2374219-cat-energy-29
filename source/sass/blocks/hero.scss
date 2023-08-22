@@ -15,6 +15,11 @@
     background-image: none;
     text-align: left;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    background: url("../img/index-background-dekstop-1x.png") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero 40%);
+    min-height: 650px;
+  }
 }
 
 .hero__text {
@@ -39,5 +44,11 @@
   @media (min-width: variables.$tablet-width) {
     width: 609px;
     height: 509px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: absolute;
+    bottom: 52px;
+    left: 420px;
   }
 }
