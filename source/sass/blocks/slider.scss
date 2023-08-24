@@ -1,3 +1,4 @@
+@use "common/mixins.scss" as *;
 @use "common/variables.scss";
 
 .slider {
@@ -7,5 +8,67 @@
   @media (min-width: variables.$tablet-width) {
     height: 512px;
     width: 560px;
+  }
+}
+
+.slider__button {
+  color: variables.$slider-button;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    color: variables.$green;
+
+    &::before {
+      border-color: variables.$green;
+    }
+  }
+
+  &:active {
+    color: variables.$green;
+    opacity: 0.6;
+
+    &::before {
+      border-color: variables.$green;
+      opacity: 0.6;
+    }
+  }
+
+  &::before {
+    @include pseudo;
+    border-right: 2px solid variables.$slider-button;
+    border-left: 2px solid variables.$slider-button;
+    border-radius: 2px;
+    height: 256px;
+    top: -108px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    @media (min-width: variables.$tablet-width) {
+      height: 512px;
+      top: -236px;
+    }
+  }
+}
+
+.slider__cat {
+  position: absolute;
+
+  &--fat {
+    top: 0;
+    left: 0;
+  }
+
+  &--slim {
+    top: 0;
+    right: 0;
   }
 }

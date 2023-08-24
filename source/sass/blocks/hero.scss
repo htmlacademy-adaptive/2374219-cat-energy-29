@@ -4,10 +4,10 @@
   position: relative;
   color: variables.$white;
   text-align: center;
-  background-image: linear-gradient(rgba(variables.$green, 0.85) 100%, rgba(variables.$white, 0.85) 60%), url("../img/mobile/index-background.png");
+  background-image: url("../img/mobile/hero-background.png"), linear-gradient(to bottom, variables.$green-hero-left 303px, variables.$white 303px);
   background-repeat: no-repeat;
-  background-size: auto 63%;
-  background-position: center 0;
+  background-size: auto;
+  background-position: top center;
   padding: 20px;
 
   @media (min-width: variables.$tablet-width) {
@@ -17,7 +17,6 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    background: url("../img/index-background-dekstop-1x.png") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero 40%);
     min-height: 650px;
   }
 }

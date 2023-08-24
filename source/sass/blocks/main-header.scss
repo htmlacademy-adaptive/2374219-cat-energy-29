@@ -1,6 +1,21 @@
 @use "common/mixins.scss" as *;
 @use "common/variables.scss";
 
+.main-header::before {
+  @media (min-width: variables.$desktop-width) {
+    @include pseudo;
+    width: 100%;
+    background: url("../img/index-background-dekstop-1x.png") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+    height: 694px;
+  }
+}
+
+.main-header--white::before {
+  @media (min-width: variables.$desktop-width) {
+    background: none;
+  }
+}
+
 .main-header__container {
   @media (min-width: variables.$tablet-width) {
     display: flex;
@@ -10,7 +25,7 @@
 
 .main-header__logo {
   position: relative;
-  margin: 14px 0;
+  padding: 14px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +35,14 @@
     position: relative;
     width: 174px;
     min-height: 50px;
+  }
+}
+
+.main-header__logo--bottom {
+  border-bottom: 1px solid variables.$grey-header;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
   }
 }
 

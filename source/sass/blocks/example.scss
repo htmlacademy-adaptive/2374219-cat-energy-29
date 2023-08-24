@@ -97,20 +97,15 @@
 }
 
 .example__image {
-  padding: 0 20px 40px 20px;
-
-  @media (min-width: variables.$tablet-width) {
-    background-image: url("../img/mobile/cat-slim.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%;
-    width: 560px;
-    padding: 0 0 101px 0;
-    min-height: 512px;
-  }
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 .example__image-cat {
+  display: block;
+
   @media (min-width: variables.$tablet-width) {
     width: 560px;
     height: 512px;
@@ -129,7 +124,13 @@
 }
 
 .example__slider {
+  position: relative;
+  height: 256px;
   margin: 0 auto;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 512px;
+  }
 
   @media (min-width: variables.$desktop-width) {
     margin: 0;

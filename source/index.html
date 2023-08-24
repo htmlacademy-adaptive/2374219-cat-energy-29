@@ -9,7 +9,7 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container container">
-        <div class="main-header__logo">
+        <div class="main-header__logo main-header__logo--bottom">
           <a class="main-header__link logo" href="index.html" aria-current="page">
             <img class="logo__image" src="img/mobile/logo-icon.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
             <img class="logo__text" src="img/mobile/logo-header.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
@@ -37,7 +37,7 @@
       </div>
     </header>
     <main class="main-container">
-      <section class="main-container__section hero container">
+      <section class="main-container__section hero">
         <h1 class="main-container__title main-container__title--white">Функциональное питание для котов</h1>
         <p class="hero__text">Занялся собой? Займись котом!</p>
         <img class="hero__product-image" src="img/mobile/index-can.png" width="280" height="270" alt="Банка с питанием Кэт Энерджи.">
@@ -100,9 +100,12 @@
               </p>
             </div>
           </div>
-          <div class="example__slider slider">
+          <div class="example__slider">
             <div class="example__image">
-              <img class="example__image-cat"src="img/mobile/cat-fat.png" width="280" height="256" alt="Изображение кота до похудения.">
+              <img class="example__image-cat slider__cat slider__cat-fat"src="img/mobile/cat--fat.png" width="280" height="256" alt="Изображение кота до похудения.">
+            </div>
+            <div class="example__image example__image-overlay slider__cat slider__cat--slim">
+              <img class="example__image-cat"src="img/mobile/cat-slim.png" width="280" height="256" alt="Изображение кота после похудения.">
             </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Ползунок слайдера</span>
