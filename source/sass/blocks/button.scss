@@ -46,6 +46,7 @@
 
     @media (min-width: variables.$desktop-width) {
       bottom: 250px;
+      left: 140px;
     }
   }
 
@@ -56,11 +57,13 @@
     min-height: 40px;
 
     @media (min-width: variables.$tablet-width) {
-      min-width: auto;
+      min-width: 250px;
     }
 
     @media (min-width: variables.$desktop-width) {
       margin-left: 0;
+      width: 169px;
+      min-width: unset;
     }
   }
 

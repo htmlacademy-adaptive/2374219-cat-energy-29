@@ -4,16 +4,35 @@
   position: relative;
   color: variables.$white;
   text-align: center;
-  background-image: url("../img/mobile/hero-background.png"), linear-gradient(to bottom, variables.$green-hero-left 303px, variables.$white 303px);
+  background-image: linear-gradient(variables.$green-hero-left, variables.$green-hero-right);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100% 305px;
   background-position: top center;
-  padding: 20px;
 
   @media (min-width: variables.$tablet-width) {
     color: variables.$black;
-    background-image: none;
+    background-image: unset;
     text-align: left;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/hero-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 320px 305px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/hero-background-mobile@2x.jpg");
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    background: unset;
+    display: block;
+    position: relative;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -40,6 +59,9 @@
 }
 
 .hero__product-image {
+  width: 280px;
+  height: 270px;
+
   @media (min-width: variables.$tablet-width) {
     width: 609px;
     height: 509px;
@@ -47,7 +69,9 @@
 
   @media (min-width: variables.$desktop-width) {
     position: absolute;
-    bottom: 52px;
-    left: 420px;
+    bottom: 103px;
+    left: 463px;
+    width: 552px;
+    height: 499px;
   }
 }

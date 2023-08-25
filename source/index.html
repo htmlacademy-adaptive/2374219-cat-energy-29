@@ -11,8 +11,16 @@
       <div class="main-header__container container">
         <div class="main-header__logo main-header__logo--bottom">
           <a class="main-header__link logo" href="index.html" aria-current="page">
-            <img class="logo__image" src="img/mobile/logo-icon.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
-            <img class="logo__text" src="img/mobile/logo-header.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
+              <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-text-tablet.svg" width="118" height="21">
+              <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg" width="101" height="18">
+              <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+            </picture>
           </a>
           <button class="main-header__toggle" type="button">
             <span class="main-header__toggle-line"></span>
@@ -38,10 +46,16 @@
     </header>
     <main class="main-container">
       <section class="main-container__section hero">
-        <h1 class="main-container__title main-container__title--white">Функциональное питание для котов</h1>
-        <p class="hero__text">Занялся собой? Займись котом!</p>
-        <img class="hero__product-image" src="img/mobile/index-can.png" width="280" height="270" alt="Банка с питанием Кэт Энерджи.">
-        <a class="hero__link button button--index" href="form.html">Подобрать программу</a>
+        <div class="hero__wrapper container">
+          <h1 class="main-container__title main-container__title--white">Функциональное питание для котов</h1>
+          <p class="hero__text">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x" width="709" height="609">
+            <img class="hero__product-image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Банка с питанием Кэт Энерджи.">
+          </picture>
+          <a class="hero__link button button--index" href="form.html">Подобрать программу</a>
+        </div>
       </section>
       <section class="main-container__section programs">
         <div class="programs__container container">
@@ -100,12 +114,18 @@
               </p>
             </div>
           </div>
-          <div class="example__slider">
-            <div class="example__image">
-              <img class="example__image-cat slider__cat slider__cat-fat"src="img/mobile/cat--fat.png" width="280" height="256" alt="Изображение кота до похудения.">
+          <div class="example__slider slider">
+            <div class="example__image slider__cat slider__cat-fat">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x" width="560" height="512">
+                <img class="example__image-cat" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота до похудения.">
+              </picture>
             </div>
             <div class="example__image example__image-overlay slider__cat slider__cat--slim">
-              <img class="example__image-cat"src="img/mobile/cat-slim.png" width="280" height="256" alt="Изображение кота после похудения.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/cat-slim-tablet.png 1x, img/cat-slim-tablet@2x.png 2x" width="560" height="512">
+                <img class="example__image-cat" src="img/cat-slim-mobile.png" srcset="img/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота после похудения.">
+              </picture>
             </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Ползунок слайдера</span>

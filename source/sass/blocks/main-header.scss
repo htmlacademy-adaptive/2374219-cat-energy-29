@@ -5,8 +5,12 @@
   @media (min-width: variables.$desktop-width) {
     @include pseudo;
     width: 100%;
-    background: url("../img/index-background-dekstop-1x.png") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+    background: url("../img/hero-background-desktop.jpg") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
     height: 694px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-background-desktop@2x.jpg") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
   }
 }
 

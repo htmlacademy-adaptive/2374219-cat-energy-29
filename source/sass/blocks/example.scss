@@ -105,6 +105,8 @@
 
 .example__image-cat {
   display: block;
+  width: 280px;
+  height: 256px;
 
   @media (min-width: variables.$tablet-width) {
     width: 560px;

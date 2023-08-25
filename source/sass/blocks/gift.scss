@@ -6,7 +6,7 @@
   line-height: 20px;
   background-color: rgba(variables.$green, 0.85);
   text-align: center;
-  background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/mobile/gift-background.png");
+  background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-mobile.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -16,12 +16,21 @@
   margin-top: 35px;
   margin-bottom: 35px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-mobile@2x.jpg");
+  }
+
   @media (min-width: variables.$tablet-width) {
     width: 707px;
     height: 200px;
     background-size: 100%;
     padding: 71px 125px 69px 421px;
     text-align: left;
+    background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -31,5 +40,10 @@
     text-align: center;
     align-self: flex-end;
     margin: 0 0 2px 81px;
+    background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-desktop@2x.jpg");
+    }
   }
 }
