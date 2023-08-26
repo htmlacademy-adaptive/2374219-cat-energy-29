@@ -69,12 +69,13 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  row-gap: 82px;
+  row-gap: 21px;
   margin-bottom: 25px;
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
     padding: 0;
+    row-gap: 82px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -100,10 +101,32 @@
   color: variables.$secondary-black;
   margin: 0;
   text-align: center;
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 8px;
 
   @media (min-width: variables.$tablet-width) {
     padding-top: 160px;
     width: 134px;
+  }
+}
+
+.product__title--more::before {
+  @include pseudo;
+  background-image: url("../img/plus-mobile.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 125px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/plus-tablet.svg");
+    top: 55px;
+    left: 38px;
+    width: 60px;
+    height: 60px;
   }
 }
 

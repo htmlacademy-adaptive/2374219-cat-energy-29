@@ -35,10 +35,15 @@
   align-items: center;
 
   @media (min-width: variables.$tablet-width) {
-    margin-top: 25px;
+    padding: 25px 0;
     position: relative;
     width: 174px;
     min-height: 50px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 202px;
+    padding: 55px 0;
   }
 }
 

@@ -1,3 +1,4 @@
+@use "common/mixins.scss" as *;
 @use "common/variables.scss";
 
 .gift {
@@ -15,6 +16,7 @@
   padding: 187px 61px 43px 58px;
   margin-top: 35px;
   margin-bottom: 35px;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-mobile@2x.jpg");
@@ -45,5 +47,28 @@
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-desktop@2x.jpg");
     }
+  }
+}
+
+.gift::before {
+  @include pseudo;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  top: 59px;
+  left: 101px;
+  width: 78px;
+  height: 80px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 57px;
+    left: 77px;
+    width: 80px;
+    height: 83px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    top: 56px;
+    left: 83px;
   }
 }

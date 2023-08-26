@@ -11,8 +11,16 @@
       <div class="main-header__container main-header__container--bottom container">
         <div class="main-header__logo">
           <a class="main-header__link logo" href="index.html">
-            <img class="logo__image" src="img/mobile/logo-icon.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
-            <img class="logo__text" src="img/mobile/logo-header.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
+              <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
+            </picture>
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-text-tablet.svg" width="118" height="21">
+              <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg" width="101" height="18">
+              <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+            </picture>
           </a>
           <button class="main-header__toggle" type="button">
             <span class="main-header__toggle-line"></span>

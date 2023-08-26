@@ -3,42 +3,7 @@
 
 .advantages__item {
   margin-bottom: 26px;
-
-  @media (min-width: variables.$tablet-width) {
-    height: 280px;
-  }
-}
-
-.advantages__item--first {
-  @media (min-width: variables.$tablet-width) {
-    width: 230px;
-  }
-}
-
-.advantages__item--second {
-  @media (min-width: variables.$tablet-width) {
-    width: 246px;
-  }
-}
-
-.advantages__item--third {
-  @media (min-width: variables.$tablet-width) {
-    width: 247px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 248px;
-  }
-}
-
-.advantages__item--fourth {
-  @media (min-width: variables.$tablet-width) {
-    width: 247px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 250px;
-  }
+  position: relative;
 }
 
 .advantages__title {
@@ -84,6 +49,71 @@
     height: 80px;
     left: 0;
     top: 31px;
+  }
+}
+
+
+.advantages__text--leaf::after {
+  @include pseudo;
+  background-image: url("../img/icon-leaf.svg");
+  background-repeat: no-repeat;
+  top: 13px;
+  left: 15px;
+  width: 30px;
+  height: 32px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 55px;
+    left: 24px;
+  }
+}
+
+.advantages__text--water::after {
+  @include pseudo;
+  background-image: url("../img/icon-water.svg");
+  background-repeat: no-repeat;
+  top: 15px;
+  left: 17px;
+  width: 26px;
+  height: 29px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 55px;
+    left: 26px;
+  }
+}
+
+.advantages__text--eat::after {
+  @include pseudo;
+  background-image: url("../img/icon-eat.svg");
+  background-repeat: no-repeat;
+  top: 15px;
+  left: 17px;
+  width: 25px;
+  height: 30px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 55px;
+    left: 28px;
+  }
+}
+
+.advantages__text--clock::after {
+  @include pseudo;
+  background-image: url("../img/icon-clock.svg");
+  background-repeat: no-repeat;
+  top: 14px;
+  left: 17px;
+  width: 27px;
+  height: 31px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 55px;
+    left: 27px;
   }
 }
 

@@ -21,7 +21,7 @@
   margin-left: 13px;
   border: 1px solid variables.$grey-input;
   flex-grow: 1;
-  padding: 14px 8px 13px 15px;
+  padding: 14px 40px 13px 15px;
 
   @media (min-width: variables.$tablet-width) {
     height: 52px;
@@ -260,6 +260,7 @@
   @media (min-width: variables.$tablet-width) {
     margin: 0;
     min-width: 240px;
+    padding-left: 60px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -308,13 +309,25 @@
   height: 30px;
   border: 1px solid variables.$grey-measure;
   top: -6px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -11px;
+  }
 }
 
 .form__box[type="checkbox"]:checked + .form__checkbox {
-  background-image: url("../img/mobile/checkbox-tick.svg");
+  background-image: url("../img/checkbox-tick.svg");
   background-repeat: no-repeat;
   background-position-x: 5px;
   background-position-y: 7px;
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/checkbox-tick-big.svg");
+    background-position-x: 7px;
+    background-position-y: 9px;
+  }
 }
 
 .form__radio-mark {
@@ -365,5 +378,46 @@
 .form__wrapper--contact {
   @media (min-width: variables.$desktop-width) {
     min-width: 570px;
+    position: relative;
+  }
+}
+
+.form__label--email::after {
+  @include pseudo;
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  top: 16px;
+  right: 14px;
+  width: 17px;
+  height: 13px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 19px;
+    right: 16px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    right: 17px;
+  }
+}
+
+.form__label--phone::after {
+  @include pseudo;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  top: 15px;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    top: 18px;
+    right: 16px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    right: 18px;
   }
 }

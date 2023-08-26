@@ -11,6 +11,10 @@
     justify-content: space-between;
     gap: 33px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 71px;
+  }
 }
 
 .site-list__link {
