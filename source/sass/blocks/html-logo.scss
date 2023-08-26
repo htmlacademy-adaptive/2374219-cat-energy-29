@@ -4,4 +4,32 @@
   color: variables.$dark-grey;
   font-size: 16px;
   line-height: 20px;
+
+  &:hover {
+    color: variables.$green;
+  }
+
+  &:focus {
+    color: variables.$green;
+  }
+
+  &:active {
+    color: variables.$green;
+    opacity: 0.3;
+  }
+}
+
+.html-logo svg {
+  &:hover {
+    fill: variables.$green;
+  }
+
+  &:focus {
+    fill: variables.$green;
+  }
+
+  &:active {
+    fill: variables.$green;
+    opacity: 0.3;
+  }
 }

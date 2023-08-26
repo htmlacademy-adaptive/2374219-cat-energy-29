@@ -24,6 +24,26 @@
   line-height: 20px;
   text-transform: uppercase;
   display: block;
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    &::after {
+      @include pseudo;
+      width: 100%;
+      height: 2px;
+      background-color: variables.$white;
+      bottom: -10px;
+    }
+    opacity: unset;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: variables.$tablet-width) {
     font-size: 18px;
@@ -38,6 +58,25 @@
 }
 
 .site-list__link--black {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    &::after {
+      @include pseudo;
+      width: 100%;
+      height: 2px;
+      background-color: variables.$green;
+      bottom: -10px;
+    }
+    opacity: unset;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: variables.$desktop-width) {
     color: variables.$secondary-black;
   }

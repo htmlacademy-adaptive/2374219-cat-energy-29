@@ -10,7 +10,8 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero-background-desktop@2x.jpg") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+    background: url("../img/hero-background-desktop@2x.jpg") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+    background-size: contain;
   }
 }
 
@@ -103,4 +104,14 @@
   top: 0;
   left: 0;
   transform: rotate(0) translateY(6px);
+}
+
+.main-header__link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

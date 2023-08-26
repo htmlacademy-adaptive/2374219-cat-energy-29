@@ -127,6 +127,10 @@
   margin: 0;
   padding: 19px 15px 22px 20px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: variables.$tablet-width) {
     width: auto;
     padding: 0 15px 57px 52px;

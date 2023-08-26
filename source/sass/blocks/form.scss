@@ -23,6 +23,14 @@
   flex-grow: 1;
   padding: 14px 40px 13px 15px;
 
+  &:hover {
+    border-color: variables.$grey-measure;
+  }
+
+  &:focus {
+    border: 2px solid variables.$dark-grey;
+  }
+
   @media (min-width: variables.$tablet-width) {
     height: 52px;
     font-size: 20px;
@@ -33,6 +41,10 @@
     color: variables.$dark-grey;
     opacity: 1;
   }
+}
+
+.form__input--error {
+  border: 2px solid variables.$input-error;
 }
 
 .form__input-area {
@@ -47,6 +59,10 @@
   align-items: center;
   text-align: left;
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .form__part-title {
@@ -247,6 +263,15 @@
   margin-bottom: 25px;
   padding-left: 45px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 60px;
+    margin-bottom: 30px;
+  }
+
   @media (min-width: variables.$desktop-width) {
     margin-bottom: 23px;
     line-height: normal;
@@ -276,6 +301,10 @@
 
 .form__button {
   width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (min-width: variables.$tablet-width) {
     width: 282px;
@@ -338,6 +367,16 @@
   border-radius: 50%;
   left: 0;
   top: -6px;
+
+  &:hover {
+    border-color: variables.$radio-hover;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -8px;
+  }
 }
 
 .form__radio[type="radio"]:checked + .form__radio-mark::after {
@@ -349,6 +388,11 @@
   height: 13px;
   background-color: variables.$green;
   border-radius: 50%;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .form__item-box {

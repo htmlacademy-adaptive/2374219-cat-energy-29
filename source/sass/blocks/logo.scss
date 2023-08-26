@@ -35,3 +35,17 @@
     height: 59px;
   }
 }
+
+.logo__footer {
+  &:hover {
+    fill: variables.$logo-footer-hover-focus;
+  }
+
+  &:focus {
+    fill: variables.$logo-footer-hover-focus;
+  }
+
+  &:active {
+    fill: variables.$logo-footer-active;
+  }
+}

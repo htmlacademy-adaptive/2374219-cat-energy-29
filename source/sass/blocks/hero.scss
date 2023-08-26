@@ -36,7 +36,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    min-height: 650px;
+    min-height: 580px;
   }
 }
 
@@ -69,8 +69,8 @@
 
   @media (min-width: variables.$desktop-width) {
     position: absolute;
-    bottom: 103px;
-    left: 463px;
+    top: -20px;
+    left: 488px;
     width: 552px;
     height: 499px;
   }
