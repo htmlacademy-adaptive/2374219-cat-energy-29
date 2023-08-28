@@ -54,6 +54,7 @@
 
 .address-contact__container {
   display: flex;
+  z-index: 2;
 
   @media (min-width: variables.$tablet-width) {
     width: 768px;

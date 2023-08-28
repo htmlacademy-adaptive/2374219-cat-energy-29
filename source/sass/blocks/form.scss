@@ -426,18 +426,14 @@
   }
 }
 
-.form__label--email::after {
-  @include pseudo;
-  background-image: url("../img/icon-email.svg");
-  background-repeat: no-repeat;
-  top: 16px;
+.form__label--email {
+  position: absolute;
+  display: inline-block;
   right: 14px;
-  width: 17px;
-  height: 13px;
-  background-size: contain;
+  top: 13px;
 
   @media (min-width: variables.$tablet-width) {
-    top: 19px;
+    top: 15px;
     right: 16px;
   }
 
@@ -446,19 +442,14 @@
   }
 }
 
-.form__label--phone::after {
-  @include pseudo;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  top: 15px;
-  right: 15px;
-  width: 15px;
-  height: 15px;
-  background-size: contain;
+.form__label--phone {
+  position: absolute;
+  right: 14px;
+  top: 14px;
 
   @media (min-width: variables.$tablet-width) {
-    top: 18px;
-    right: 16px;
+    top: 16px;
+    right: 13px;
   }
 
   @media (min-width: variables.$tablet-width) {
