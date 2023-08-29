@@ -4,11 +4,12 @@
   background-color: variables.$grey;
 
   @media (min-width: variables.$tablet-width) {
-    background-image: linear-gradient(variables.$white 0, variables.$white 384px, variables.$grey 384px, variables.$grey 1080px);
+    background-image: linear-gradient(variables.$white 0, variables.$white 520px, variables.$grey 520px, variables.$grey 1080px);
   }
 
   @media (min-width: variables.$desktop-width) {
     background-image: linear-gradient(variables.$white 0, variables.$white 136px, variables.$light-grey 136px, variables.$light-grey 600px);
+    padding-bottom: 70px;
   }
 }
 
@@ -112,6 +113,10 @@
     width: 560px;
     height: 512px;
   }
+}
+
+.example__image-cat--fat {
+  max-width: none;
 }
 
 .example__wrapper-tablet {

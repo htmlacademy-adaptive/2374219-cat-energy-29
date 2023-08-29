@@ -22,6 +22,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 
   &:hover {
     color: variables.$green;
@@ -65,6 +66,17 @@
   &--fat {
     top: 0;
     left: 0;
+    z-index: 2;
+    width: 50%;
+    background-color: variables.$grey;
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: linear-gradient(variables.$white 0, variables.$white 151px, variables.$grey 151px, variables.$grey 1080px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      background-image: linear-gradient(variables.$white 0, variables.$white 136px, variables.$light-grey 136px, variables.$light-grey 600px);
+    }
   }
 
   &--slim {
