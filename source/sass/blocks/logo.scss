@@ -36,16 +36,20 @@
   }
 }
 
-.logo__footer {
-  &:hover {
+.logo {
+  &:hover svg {
     fill: variables.$logo-footer-hover-focus;
   }
 
-  &:focus {
+  &:focus svg {
     fill: variables.$logo-footer-hover-focus;
   }
 
-  &:active {
+  &:active svg {
     fill: variables.$logo-footer-active;
   }
+}
+
+.logo__footer {
+  fill: variables.$secondary-black;
 }

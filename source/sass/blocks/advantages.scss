@@ -4,6 +4,24 @@
 .advantages__item {
   margin-bottom: 26px;
   position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    position: relative;
+    display: block;
+    min-height: 280px;
+
+    &::after {
+      position: absolute;
+      font-family: variables.$oswald-font;
+      color: variables.$light-grey;
+      font-size: 280px;
+      top: 90px;
+      left: 110px;
+      counter-increment: advantage;
+      content: counter(advantage);
+      z-index: -1;
+    }
+  }
 }
 
 .advantages__title {
@@ -125,11 +143,13 @@
     display: grid;
     grid-template-columns: min-content min-content;
     column-gap: 137px;
+    counter-reset: advantage;
   }
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
     justify-content: space-between;
     column-gap: 0;
+    flex-wrap: wrap;
   }
 }

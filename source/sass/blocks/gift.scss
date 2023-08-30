@@ -18,6 +18,11 @@
   margin-bottom: 35px;
   position: relative;
 
+  &:hover {
+    opacity: 0.95;
+    cursor: pointer;
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/gift-background-mobile@2x.jpg");
   }

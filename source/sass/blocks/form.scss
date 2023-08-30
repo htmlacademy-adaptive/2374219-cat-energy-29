@@ -28,7 +28,9 @@
   }
 
   &:focus {
-    border: 2px solid variables.$dark-grey;
+    border-color: variables.$dark-grey;
+    outline: none;
+    box-shadow: 0 0 0 1px variables.$dark-grey;
   }
 
   @media (min-width: variables.$tablet-width) {
@@ -44,7 +46,8 @@
 }
 
 .form__input--error {
-  border: 2px solid variables.$input-error;
+  border-color: variables.$input-error;
+  box-shadow: 0 0 0 1px variables.$input-error;
 }
 
 .form__input-area {
@@ -278,6 +281,19 @@
   }
 }
 
+.form__radio[type="radio"]:focus-visible + .form__radio-mark {
+  border-color: variables.$dark-grey;
+  box-shadow: 0 0 0 1px variables.$dark-grey;
+}
+
+.form__radio[type="radio"]:hover + .form__radio-mark {
+  border-color: variables.$radio-hover;
+}
+
+.form__radio[type="radio"]:disabled + .form__radio-mark {
+  opacity: 0.3;
+}
+
 .form__check {
   margin-bottom: 23px;
   padding-left: 45px;
@@ -291,6 +307,19 @@
   @media (min-width: variables.$desktop-width) {
     padding-right: 0;
   }
+}
+
+.form__box[type="checkbox"]:focus-visible + .form__checkbox {
+  border-color: variables.$dark-grey;
+  box-shadow: 0 0 0 1px variables.$dark-grey;
+}
+
+.form__box[type="checkbox"]:hover + .form__checkbox {
+  border-color: variables.$radio-hover;
+}
+
+.form__box[type="checkbox"]:disabled + .form__checkbox {
+  opacity: 0.3;
 }
 
 .form__check--last {
@@ -368,10 +397,6 @@
   left: 0;
   top: -6px;
 
-  &:hover {
-    border-color: variables.$radio-hover;
-  }
-
   @media (min-width: variables.$tablet-width) {
     width: 40px;
     height: 40px;
@@ -392,6 +417,16 @@
   @media (min-width: variables.$tablet-width) {
     width: 18px;
     height: 18px;
+  }
+}
+
+.form__svg {
+  fill: none;
+}
+
+.form__input-email[type="input"] + .form__label--email svg {
+  &:focus {
+    fill: variables.$green;
   }
 }
 

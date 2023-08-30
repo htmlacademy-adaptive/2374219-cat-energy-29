@@ -9,27 +9,28 @@
     color: variables.$green;
   }
 
+  &:hover svg {
+    fill: variables.$green;
+  }
+
   &:focus {
     color: variables.$green;
   }
 
-  &:active {
-    color: variables.$green;
+  &:focus svg {
+    fill: variables.$green;
+  }
+
+  &:active span {
     opacity: 0.3;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+    color: variables.$green;
   }
 }
 
-.html-logo svg {
-  &:hover {
-    fill: variables.$green;
-  }
-
-  &:focus {
-    fill: variables.$green;
-  }
-
-  &:active {
-    fill: variables.$green;
-    opacity: 0.3;
-  }
+.html-logo__icon {
+  fill: variables.$slider-button;
 }
