@@ -1,0 +1,86 @@
+@use "common/mixins.scss" as *;
+@use "common/variables.scss";
+
+.slider {
+  height: 256px;
+  width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 512px;
+    width: 560px;
+  }
+}
+
+.slider__button {
+  color: variables.$slider-button;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+  &:hover {
+    color: variables.$green;
+
+    &::before {
+      border-color: variables.$green;
+    }
+  }
+
+  &:active {
+    color: variables.$green;
+    opacity: 0.6;
+
+    &::before {
+      border-color: variables.$green;
+      opacity: 0.6;
+    }
+  }
+
+  &::before {
+    @include pseudo;
+    height: 256px;
+    border-right: 2px solid variables.$slider-button;
+    border-left: 2px solid variables.$slider-button;
+    border-radius: 2px;
+    top: -108px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    @media (min-width: variables.$tablet-width) {
+      height: 512px;
+      top: -236px;
+    }
+  }
+}
+
+.slider__cat {
+  position: absolute;
+
+  &--fat {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 50%;
+    background-color: variables.$grey;
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: linear-gradient(variables.$white 0, variables.$white 151px, variables.$grey 151px, variables.$grey 1080px);
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      background-image: linear-gradient(variables.$white 0, variables.$white 136px, variables.$light-grey 136px, variables.$light-grey 600px);
+    }
+  }
+
+  &--slim {
+    top: 0;
+    right: 0;
+  }
+}

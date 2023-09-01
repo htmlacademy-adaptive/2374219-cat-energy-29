@@ -20,6 +20,10 @@
     width: 530px;
     padding-left: 100px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 50px;
+  }
 }
 
 .main-container__title--big {

@@ -46,3 +46,22 @@
     align-items: center;
   }
 }
+
+.social__link {
+  &:hover svg {
+    fill: variables.$green;
+  }
+
+  &:focus svg {
+    fill: variables.$green;
+  }
+
+  &:active {
+    fill: variables.$green;
+    opacity: 0.3;
+  }
+}
+
+.social__link-icon {
+  fill: variables.$slider-button;
+}

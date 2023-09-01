@@ -6,6 +6,7 @@
   background-color: variables.$light-grey;
   width: 280px;
   min-height: 266px;
+  position: relative;
 
   @media (min-width: variables.$tablet-width) {
     width: 708px;
@@ -59,8 +60,59 @@
   @media (min-width: variables.$desktop-width) {
     width: 100px;
     height: 100px;
-    left: 47px;
-    top: 52px;
+    left: 52px;
+    top: 47px;
+  }
+}
+
+.programs-item__text--slim::before {
+  @include pseudo;
+  background-image: url("../img/cat-slim.svg");
+  background-repeat: no-repeat;
+  top: 21px;
+  left: 27px;
+  width: 36px;
+  height: 50px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 140px;
+    height: 194px;
+    left: 475px;
+    top: 81px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 70px;
+    height: 97px;
+    left: 67px;
+    top: 41px;
+  }
+}
+
+.programs-item__text--pro::before {
+  @include pseudo;
+  background-image: url("../img/cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 35px;
+  left: 12px;
+  width: 68px;
+  height: 28px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 268px;
+    height: 112px;
+    left: 411px;
+    top: 135px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 135px;
+    height: 56px;
+    left: 33px;
+    top: 67px;
   }
 }
 
@@ -74,11 +126,61 @@
   text-transform: uppercase;
   margin: 0;
   padding: 19px 15px 22px 20px;
+  position: relative;
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
-    padding: 0 15px 57px 52px;
+    padding-left: 52px;
     font-size: 20px;
+  }
+}
+
+.programs-item__link:active {
+  opacity: 0.3;
+}
+
+.programs-item__link::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: variables.$black;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 120px;
+
+  @media (min-width: variables.$tablet-width) {
+    left: 170px;
+  }
+}
+
+.programs-item__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 9px;
+  width: 12px;
+  height: 9px;
+  top: 50%;
+  left: 133px;
+  transform: translateY(-50%);
+
+  @media (min-width: variables.$tablet-width) {
+    left: 184px;
+  }
+}
+
+.programs-item__link:hover::before {
+  height: 2px;
+  width: 26px;
+}
+
+.programs-item__link:hover::after {
+  left: 141px;
+
+  @media (min-width: variables.$tablet-width) {
+    left: 192px;
   }
 }
 

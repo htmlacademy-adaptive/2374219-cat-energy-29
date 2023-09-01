@@ -1,6 +1,34 @@
 @use "common/mixins.scss" as *;
 @use "common/variables.scss";
 
+.main-header::before {
+  @media (min-width: variables.$desktop-width) {
+    @include pseudo;
+    width: 100%;
+    background: url("../img/hero-background-desktop.jpg") no-repeat left calc(50% + 360px) top 0, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+    height: 694px;
+  }
+
+  @media (min-width: 1440px) {
+    background: url("../img/hero-background-desktop.jpg") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+  }
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/hero-background-desktop@2x.jpg") no-repeat left calc(50% + 360px) top 0, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+    background-size: contain;
+  }
+
+  @media (min-width: 1440px) and (min-resolution: 2dppx) {
+    background: url("../img/hero-background-desktop.jpg") no-repeat right, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+  }
+}
+
+.main-header--white::before {
+  @media (min-width: variables.$desktop-width) {
+    background: none;
+  }
+}
+
 .main-header__container {
   @media (min-width: variables.$tablet-width) {
     display: flex;
@@ -10,16 +38,29 @@
 
 .main-header__logo {
   position: relative;
-  margin: 14px 0;
+  padding: 14px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: variables.$tablet-width) {
-    margin-top: 25px;
+    padding: 25px 0;
     position: relative;
     width: 174px;
     min-height: 50px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 202px;
+    padding: 55px 0;
+  }
+}
+
+.main-header__logo--bottom {
+  border-bottom: 1px solid variables.$grey-header;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
   }
 }
 
@@ -71,4 +112,14 @@
   top: 0;
   left: 0;
   transform: rotate(0) translateY(6px);
+}
+
+.main-header__link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

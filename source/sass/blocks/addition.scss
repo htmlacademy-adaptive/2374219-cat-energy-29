@@ -52,11 +52,22 @@
   @media (min-width: variables.$tablet-width) {
     position: absolute;
     right: 130px;
+    width: fit-content;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    text-align: left;
+    left: 325px;
   }
 }
 
 .addition__text--right {
   text-align: right;
+
+  @media (min-width: variables.$desktop-width) {
+    text-align: left;
+    min-width: 42px;
+  }
 }
 
 .addition__list {
@@ -65,6 +76,12 @@
   @media (min-width: variables.$tablet-width) {
     border: 1px solid variables.$grey-measure;
     position: relative;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 895px;
+    border-right: none;
+    border-left: none;
   }
 }
 
@@ -78,6 +95,12 @@
   @media (min-width: variables.$tablet-width) {
     padding: 26px 38px 28px 38px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    padding: 15px 0 17px 0;
+    gap: 40px;
+  }
 }
 
 .addition__item-wrapper {
@@ -89,6 +112,12 @@
     display: flex;
     justify-content: space-between;
     width: 630px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    align-items: center;
+    width: 610px;
   }
 }
 
@@ -117,9 +146,15 @@
 
 .addition__container {
   @media (min-width: variables.$tablet-width) {
-    width: 708px;
     margin-top: 70px;
     padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    padding: 80px 40px;
+    width: 1300px;
+    margin: 0 auto;
   }
 }
 
@@ -137,5 +172,13 @@
 
   @media (min-width: variables.$tablet-width) {
     padding-left: 30px;
+  }
+}
+
+.addition__wrapper-adds {
+  @media (min-width: variables.$desktop-width) {
+    margin: unset;
+    padding: 0;
+    width: unset;
   }
 }

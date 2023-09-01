@@ -14,6 +14,7 @@
     height: 511px;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(variables.$white 81px, variables.$light-grey 81px);
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -25,7 +26,7 @@
 .product__link {
   color: variables.$darker-grey;
   text-align: center;
-  min-height: 107px;
+  min-height: fit-content;
 }
 
 .product__title {
@@ -34,19 +35,21 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
+  margin: 0;
+  padding-bottom: 14px;
 
   @media (min-width: variables.$tablet-width) {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    margin: 170px 55px 20px 60px;
+    margin: 0 55px 16px 60px;
+    padding: 0;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    margin: 151px 52px 23px 53px;
   }
 }
 
@@ -57,7 +60,7 @@
     width: 135px;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     width: 140px;
   }
 }
@@ -66,12 +69,13 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  row-gap: 82px;
+  row-gap: 21px;
   margin-bottom: 25px;
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
     padding: 0;
+    row-gap: 82px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -86,6 +90,10 @@
   @media (min-width: variables.$tablet-width) {
     background-color: variables.$white;
     border-bottom: unset;
+    background-image: none;
+    border: 2px solid variables.$light-grey;
+    height: 430px;
+    margin-top: 81px;
   }
 }
 
@@ -93,10 +101,32 @@
   color: variables.$secondary-black;
   margin: 0;
   text-align: center;
+  position: relative;
+  padding-top: 53px;
+  padding-bottom: 8px;
 
   @media (min-width: variables.$tablet-width) {
-    padding-top: 237px;
+    padding-top: 160px;
     width: 134px;
+  }
+}
+
+.product__title--more::before {
+  @include pseudo;
+  background-image: url("../img/plus-mobile.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 125px;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+
+  @media (min-width: variables.$tablet-width) {
+    background-image: url("../img/plus-tablet.svg");
+    top: 55px;
+    left: 38px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -110,6 +140,7 @@
     line-height: 20px;
     border-bottom: 1px solid variables.$grey-measure;
     padding-bottom: 4px;
+    padding-top: 4px;
   }
 }
 
@@ -182,5 +213,22 @@
 .product__button {
   @media (min-width: variables.$desktop-width) {
     margin: 0 auto;
+  }
+}
+
+.product__image {
+  width: 140px;
+  height: 107px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 200px;
+    height: 210px;
+    margin: 18px 0 18px 25px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 169px;
+    height: 210px;
+    margin: 18px 0 18px 37px;
   }
 }
