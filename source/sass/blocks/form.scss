@@ -292,6 +292,7 @@
 
 .form__radio[type="radio"]:disabled + .form__radio-mark {
   opacity: 0.3;
+  cursor: default;
 }
 
 .form__check {
@@ -320,6 +321,7 @@
 
 .form__box[type="checkbox"]:disabled + .form__checkbox {
   opacity: 0.3;
+  cursor: default;
 }
 
 .form__check--last {
@@ -424,10 +426,16 @@
   fill: none;
 }
 
-.form__input-email[type="input"] + .form__label--email svg {
-  &:focus {
-    fill: variables.$green;
-  }
+.form__input-email:focus + .form__label--email svg {
+  stroke: variables.$green;
+}
+
+.form__input-phone:focus + .form__label--phone svg {
+  stroke: variables.$green;
+}
+
+.form__input--error + .form__label--email svg {
+  stroke: variables.$input-error;
 }
 
 .form__item-box {

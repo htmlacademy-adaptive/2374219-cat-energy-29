@@ -26,6 +26,7 @@
 
   &:hover {
     color: variables.$green;
+    cursor: pointer;
 
     &::before {
       border-color: variables.$green;
@@ -84,3 +85,8 @@
     right: 0;
   }
 }
+
+.slider__icon {
+  fill: none;
+}
+
