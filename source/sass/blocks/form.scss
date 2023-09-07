@@ -188,7 +188,7 @@
   }
 }
 
-.form__container--border {
+.form__container-border {
   @media (min-width: variables.$tablet-width) {
     border: 1px solid variables.$grey-input;
     padding: 28px 87px 7px 27px;
@@ -217,7 +217,7 @@
   }
 }
 
-.form__container--button {
+.form__container-button {
   @media (min-width: variables.$tablet-width) {
     display: flex;
     column-gap: 64px;
@@ -426,15 +426,15 @@
   fill: none;
 }
 
-.form__input-email:focus + .form__label--email svg {
+.form__input-email:focus + .form__label-email svg {
   stroke: variables.$green;
 }
 
-.form__input-phone:focus + .form__label--phone svg {
+.form__input-phone:focus + .form__label-phone svg {
   stroke: variables.$green;
 }
 
-.form__input--error + .form__label--email svg {
+.form__input--error + .form__label-email svg {
   stroke: variables.$input-error;
 }
 
@@ -469,7 +469,7 @@
   }
 }
 
-.form__label--email {
+.form__label-email {
   position: absolute;
   display: inline-block;
   right: 14px;
@@ -485,7 +485,7 @@
   }
 }
 
-.form__label--phone {
+.form__label-phone {
   position: absolute;
   right: 14px;
   top: 14px;
