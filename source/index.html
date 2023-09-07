@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -50,8 +50,8 @@
           <h1 class="main-container__title main-container__title--white">Функциональное питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="552" height="499">
-            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x" width="709" height="609">
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x" width="709" height="609">
             <img class="hero__product-image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Банка с питанием Кэт Энерджи.">
           </picture>
           <a class="hero__link button button--index" href="form.html">Подобрать программу</a>
@@ -82,7 +82,7 @@
               <p class="advantages__text advantages__text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="advantages__item">
-              <p class="advantages__text advantages__text--water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="advantages__text advantages__text--water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="advantages__item">
               <p class="advantages__text advantages__text--eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
@@ -117,20 +117,18 @@
           <div class="example__slider slider">
             <div class="example__image slider__cat slider__cat--fat">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x" width="560" height="512">
-                <img class="example__image-cat example__image-cat--fat" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота до похудения.">
+                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png, img/cat-fat-tablet@2x.png 2x" width="560" height="512"><img class="example__image-cat example__image-cat--fat" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота до похудения.">
               </picture>
             </div>
             <div class="example__image slider__cat slider__cat--slim">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-slim-tablet.png 1x, img/cat-slim-tablet@2x.png 2x" width="560" height="512">
-                <img class="example__image-cat example__image-cat--slim" src="img/cat-slim-mobile.png" srcset="img/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота после похудения.">
+                <source media="(min-width: 768px)" srcset="img/cat-slim-tablet.png, img/cat-slim-tablet@2x.png 2x" width="560" height="512"><img class="example__image-cat example__image-cat--slim" src="img/cat-slim-mobile.png" srcset="img/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота после похудения.">
               </picture>
             </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Ползунок слайдера</span>
-              <svg width="40" height="40" fill="none">
-                <use xlink:href="img/sprite.svg#slider-button"></use>
+              <svg class="slider__icon" width="40" height="40">
+                <use xlink:href="img/stack.svg#slider-button"></use>
               </svg>
             </button>
           </div>
@@ -144,7 +142,7 @@
           <address class="address-contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
       </section>
-      <iframe class=main-footer__map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197675!2d30.320472476523708!3d59.93871916209441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692114151622!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Офис компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."></iframe>
+      <iframe class="main-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197675!2d30.320472476523708!3d59.93871916209441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692114151622!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Офис компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."></iframe>
       <section class="main-footer__section social">
         <div class="social__container container">
           <h2 class="visually-hidden">Социальные ссылки</h2>
@@ -165,7 +163,7 @@
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                  <use xlink:href="img/stack.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
@@ -173,7 +171,7 @@
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  <use xlink:href="img/stack.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
@@ -181,7 +179,7 @@
               <a class="social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  <use xlink:href="img/stack.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
