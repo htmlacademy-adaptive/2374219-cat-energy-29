@@ -2,9 +2,11 @@
 
 .example {
   background-color: variables.$grey;
+  padding-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
-    background-image: linear-gradient(variables.$white 0, variables.$white 520px, variables.$grey 520px, variables.$grey 1080px);
+    background-image: linear-gradient(variables.$white 0, variables.$white 617px, variables.$grey 617px, variables.$grey 1080px);
+    padding-bottom: 103px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -20,7 +22,7 @@
   line-height: 40px;
   font-weight: 400;
   margin: 0;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 40px 0;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
@@ -31,6 +33,7 @@
   @media (min-width: variables.$desktop-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 0 20px 40px 0;
   }
 }
 
@@ -49,11 +52,12 @@
     width: 172px;
     text-align: right;
     margin: 0;
+    padding-top: 10px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 330px;
-    margin-top: 55px;
+    margin-top: 29px;
   }
 }
 
@@ -65,17 +69,19 @@
 
 .example__text {
   margin: 0;
-  padding: 0 20px 20px 20px;
+  padding: 0 0 20px 0;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 55px;
-    padding: 0;
+    margin-bottom: 35px;
+    padding-top: 20px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 426px;
+    width: 432px;
+    padding-top: 106px;
+    margin-bottom: 48px;
   }
 }
 
@@ -86,7 +92,6 @@
 .example__wrapper {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
   padding-bottom: 20px;
   text-align: center;
   position: relative;
@@ -137,6 +142,7 @@
 
   @media (min-width: variables.$tablet-width) {
     height: 512px;
+    margin-top: 82px;
   }
 
   @media (min-width: variables.$desktop-width) {

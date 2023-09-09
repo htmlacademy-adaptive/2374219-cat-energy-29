@@ -10,10 +10,12 @@
     margin-top: 39px;
     justify-content: space-between;
     gap: 33px;
+    margin-right: 5px;
   }
 
   @media (min-width: variables.$desktop-width) {
     margin-top: 71px;
+    margin-right: 0;
   }
 }
 
@@ -86,6 +88,14 @@
   }
 }
 
+.site-list__item:first-child {
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: variables.$tablet-width) {
+    border-top: none;
+  }
+}
+
 .site-list__item--current::after {
   @media (min-width: variables.$tablet-width) {
     @include pseudo;
@@ -98,6 +108,7 @@
 
   @media (min-width: variables.$desktop-width) {
     background-color: variables.$white;
+    bottom: -8px;
   }
 }
 

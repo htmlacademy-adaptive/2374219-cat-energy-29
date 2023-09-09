@@ -7,6 +7,7 @@
   flex-direction: column;
   background-color: variables.$light-grey;
   text-align: center;
+  position: absolute;
 }
 
 .social__list {
@@ -15,11 +16,12 @@
   width: 132px;
   min-height: 22px;
   justify-content: space-between;
-  margin: 40px 74px;
+  margin: 40px 74px 35px 74px;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
     width: 132px;
+    margin-left: 40px;
   }
 }
 
@@ -31,7 +33,7 @@
   align-items: center;
 
   @media (min-width: variables.$tablet-width) {
-    width: 168px;
+    width: 163px;
   }
 }
 
@@ -44,6 +46,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 57px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 72px 110px;
   }
 }
 
@@ -64,4 +71,32 @@
 
 .social__link-icon {
   fill: variables.$slider-button;
+}
+
+.social__list::before {
+  @include pseudo;
+  min-width: 280px;
+  height: 1px;
+  background-color: variables.$grey-lines;
+  right: 20px;
+  top: 84px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 0;
+    height: 0;
+  }
+}
+
+.social__list::after {
+  @include pseudo;
+  min-width: 280px;
+  height: 1px;
+  background-color: variables.$grey-lines;
+  right: 20px;
+  bottom: 94px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 0;
+    height: 0;
+  }
 }

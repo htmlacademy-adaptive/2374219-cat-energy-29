@@ -31,7 +31,7 @@
 
 .main-header__logo {
   position: relative;
-  padding: 14px 0;
+  padding: 13px 0 11px 0;
 
   @media (min-width: variables.$tablet-width) {
     padding: 25px 0;
@@ -62,13 +62,11 @@
 }
 
 .main-header__container {
-  border-bottom: 1px solid variables.$grey-header;
   width: unset;
   margin: unset;
   padding: unset;
 
   @media (min-width: variables.$tablet-width) {
-    border: none;
     display: flex;
     justify-content: space-between;
     width: 768px;
@@ -82,8 +80,16 @@
   }
 }
 
-.main-header__logo--bottom {
+.main-header__container--light {
   border-bottom: 1px solid variables.$grey-header;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
+}
+
+.main-header__container--dark {
+  border-bottom: 1px solid variables.$grey-lines;
 
   @media (min-width: variables.$tablet-width) {
     border: none;
@@ -99,6 +105,7 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  padding-bottom: 4px;
 
   @media (min-width: variables.$tablet-width) {
     display: none;

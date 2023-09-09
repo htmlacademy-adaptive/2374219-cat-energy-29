@@ -13,7 +13,7 @@
   line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  width: 108px;
+  width: 124px;
   min-height: 56px;
   padding-top: 14px;
   border: 1px solid variables.$grey-measure;
@@ -23,7 +23,7 @@
     font-size: 30px;
     line-height: 37px;
     width: 162px;
-    min-height: 77px;
+    min-height: 72px;
   }
 }
 
@@ -35,11 +35,11 @@
   position: absolute;
   top: 46px;
   background-color: variables.$grey;
-  margin-left: 15px;
+  margin-left: 22px;
 
   @media (min-width: variables.$tablet-width) {
     background-color: variables.$white;
-    top: 68px;
+    top: 64px;
     width: 129px;
     font-size: 14px;
     line-height: 14px;

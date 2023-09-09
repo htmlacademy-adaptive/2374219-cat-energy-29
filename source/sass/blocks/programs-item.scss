@@ -130,7 +130,7 @@
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
-    padding-left: 52px;
+    padding: 8px 15px 22px 52px;
     font-size: 20px;
   }
 }
@@ -145,12 +145,16 @@
   width: 18px;
   height: 2px;
   background-color: variables.$black;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 120px;
+  top: 25px;
+  left: 118px;
 
   @media (min-width: variables.$tablet-width) {
     left: 170px;
+    top: 14px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    left: 180px;
   }
 }
 
@@ -162,12 +166,17 @@
   background-size: 7px 12px;
   width: 15px;
   height: 12px;
-  top: 50%;
+  top: 26px;
   left: 133px;
   transform: translateY(-50%);
 
   @media (min-width: variables.$tablet-width) {
     left: 184px;
+    top: 15px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    left: 198px;
   }
 }
 
@@ -215,4 +224,22 @@
 .programs__item {
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: -5px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.programs-item:last-child {
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 23px;
+  }
 }

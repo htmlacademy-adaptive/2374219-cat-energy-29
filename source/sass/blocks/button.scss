@@ -37,7 +37,6 @@
 
   &--index {
     display: block;
-    font-size: 14px;
     line-height: 40px;
     width: 280px;
     margin-left: auto;
@@ -54,8 +53,8 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: 260px;
-      left: 140px;
+      top: 284px;
+      left: 120px;
     }
   }
 
