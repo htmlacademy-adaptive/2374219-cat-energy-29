@@ -72,10 +72,16 @@
   text-align: center;
   padding: 22px 40px 24px 40px;
   position: relative;
-  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;
+  }
+}
+
+.site-list__item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: variables.$tablet-width) {
     border-bottom: none;
   }
 }
