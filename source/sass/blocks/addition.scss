@@ -52,7 +52,7 @@
   @media (min-width: variables.$tablet-width) {
     position: absolute;
     right: 130px;
-    width: fit-content;
+    max-width: 240px;
   }
 
   @media (min-width: variables.$desktop-width) {
