@@ -127,6 +127,7 @@
   margin: 0;
   padding: 19px 15px 22px 20px;
   position: relative;
+  max-width: 235px;
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
@@ -145,8 +146,8 @@
   width: 18px;
   height: 2px;
   background-color: variables.$black;
-  top: 25px;
-  left: 118px;
+  top: 26px;
+  right: -19px;
 
   @media (min-width: variables.$tablet-width) {
     left: 170px;
@@ -166,12 +167,12 @@
   background-size: 7px 12px;
   width: 15px;
   height: 12px;
-  top: 26px;
-  left: 133px;
+  top: 27px;
+  right: -33px;
   transform: translateY(-50%);
 
   @media (min-width: variables.$tablet-width) {
-    left: 184px;
+    right: -51px;
     top: 15px;
   }
 
@@ -183,10 +184,11 @@
 .programs-item__link:hover::before {
   height: 2px;
   width: 26px;
+  right: -27px;
 }
 
 .programs-item__link:hover::after {
-  left: 141px;
+  right: -41px;
 
   @media (min-width: variables.$tablet-width) {
     left: 192px;
@@ -212,8 +214,21 @@
   }
 }
 
+.programs-item__text::after {
+  @include pseudo;
+  width: 240px;
+  height: 1px;
+  background-color: variables.$grey-lines;
+  bottom: 57px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}
+
 .programs__list {
   @include list;
+  position: relative;
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
@@ -222,7 +237,7 @@
 }
 
 .programs__item {
-  margin-top: 20px;
+  margin-top: 19px;
   margin-bottom: 20px;
 
   @media (min-width: variables.$tablet-width) {

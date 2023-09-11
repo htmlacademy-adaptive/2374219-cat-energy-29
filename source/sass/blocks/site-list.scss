@@ -88,11 +88,21 @@
   }
 }
 
+.site-list__item:not(:first-child) {
+  @media (min-width: variables.$desktop-width) {
+    margin-right: 1px;
+  }
+}
+
 .site-list__item:first-child {
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: variables.$tablet-width) {
     border-top: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-left: 4px;
   }
 }
 

@@ -44,7 +44,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 14px 36px 20px 46px;
+  margin: 14px 36px 20px 47px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
@@ -56,14 +56,14 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    width: 330px;
+    width: 327px;
     margin-top: 29px;
   }
 }
 
 .example__expenses-number {
   @media (min-width: variables.$desktop-width) {
-    margin-left: 63px;
+    margin-left: 60px;
   }
 }
 

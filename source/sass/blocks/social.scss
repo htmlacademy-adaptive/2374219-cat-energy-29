@@ -3,25 +3,28 @@
 
 
 .social {
-  display: flex;
-  flex-direction: column;
   background-color: variables.$light-grey;
-  text-align: center;
   position: relative;
+  text-align: center;
 }
 
 .social__list {
   @include list;
   display: flex;
+  flex-wrap: wrap;
   width: 132px;
   min-height: 22px;
   justify-content: space-between;
-  margin: 40px 74px 35px 74px;
+  margin: 37px 74px 35px 74px;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
     width: 132px;
     margin-left: 40px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 0 0 35px;
   }
 }
 
@@ -84,8 +87,7 @@
   top: 84px;
 
   @media (min-width: variables.$tablet-width) {
-    width: 0;
-    height: 0;
+    display: none;
   }
 }
 
@@ -95,7 +97,7 @@
   height: 1px;
   background-color: variables.$grey-lines;
   right: 20px;
-  bottom: 94px;
+  bottom: 93px;
 
   @media (min-width: variables.$tablet-width) {
     display: none;
