@@ -6,6 +6,7 @@
     @include pseudo;
     width: 100%;
     background: url("../img/hero-background-desktop.jpg") no-repeat left calc(50% + 360px) top 0, linear-gradient(90deg, variables.$white 50%, variables.$green-hero-left 50%);
+    height: 694px;
   }
 
   @media (min-width: 1440px) {
