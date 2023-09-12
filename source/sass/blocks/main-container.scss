@@ -60,5 +60,18 @@
 }
 
 .main-container__catalog {
-  margin-bottom: 41px;
+  margin-top: 28px;
+  margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 76px;
+    margin-top: 36px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 75px;
+    margin-top: 15px;
+  }
 }
