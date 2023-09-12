@@ -150,12 +150,8 @@
   right: -19px;
 
   @media (min-width: variables.$tablet-width) {
-    left: 170px;
+    right: -29px;
     top: 14px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    left: 180px;
   }
 }
 
@@ -172,12 +168,12 @@
   transform: translateY(-50%);
 
   @media (min-width: variables.$tablet-width) {
-    right: -51px;
+    right: -43px;
     top: 15px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    left: 198px;
+    right: -44px;
   }
 }
 
@@ -185,13 +181,17 @@
   height: 2px;
   width: 26px;
   right: -27px;
+
+  @media (min-width: variables.$tablet-width) {
+    right: -37px;
+  }
 }
 
 .programs-item__link:hover::after {
   right: -41px;
 
   @media (min-width: variables.$tablet-width) {
-    left: 192px;
+    right: -51px;
   }
 }
 
@@ -254,7 +254,7 @@
     margin-top: 30px;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     margin-top: 23px;
   }
 }

@@ -85,7 +85,7 @@
     background-color: variables.$grey;
 
     @media (min-width: variables.$tablet-width) {
-      background-image: linear-gradient(variables.$white 0, variables.$white 151px, variables.$grey 151px, variables.$grey 1080px);
+      background-image: linear-gradient(variables.$white 0, variables.$white 153px, variables.$grey 153px, variables.$grey 1080px);
     }
 
     @media (min-width: variables.$desktop-width) {

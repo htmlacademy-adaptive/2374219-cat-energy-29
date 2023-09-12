@@ -21,6 +21,26 @@
       counter-increment: advantage;
       content: counter(advantage);
       z-index: -1;
+      width: 170px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    display: block;
+    min-height: 280px;
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      font-family: variables.$oswald-font;
+      color: variables.$light-grey;
+      font-size: 280px;
+      top: 132px;
+      right: -3px;
+      counter-increment: advantage;
+      content: counter(advantage);
+      z-index: -1;
       width: 135px;
     }
   }
@@ -32,6 +52,10 @@
   }
 
   &::after {
+    @media (min-width: variables.$tablet-width) {
+      width: 165px;
+    }
+
     @media (min-width: variables.$desktop-width) {
       width: 130px;
     }
@@ -54,26 +78,27 @@
     padding-top: 25px;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     padding-top: 51px;
   }
 }
 
 .advantages__text {
-
   min-height: 54px;
   margin: 0;
   padding-left: 80px;
   position: relative;
 
   @media (min-width: variables.$tablet-width) {
+    width: 280px;
     font-size: 16px;
     line-height: 24px;
-    padding: 151px 4px 57px 0;
+    padding: 151px 14px 57px 0;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 246px;
+    padding: 151px 4px 57px 0;
   }
 }
 

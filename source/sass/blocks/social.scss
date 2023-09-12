@@ -4,8 +4,8 @@
 
 .social {
   background-color: variables.$light-grey;
-  position: relative;
   text-align: center;
+  position: relative;
 }
 
 .social__list {
@@ -50,6 +50,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 57px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -80,11 +81,16 @@
 
 .social__list::before {
   @include pseudo;
-  min-width: 280px;
+  width: 280px;
   height: 1px;
   background-color: variables.$grey-lines;
-  right: 20px;
+  right: 50%;
+  transform: translateX(50%);
   top: 84px;
+
+  @media (min-width: 360px) {
+    width: 100%;
+  }
 
   @media (min-width: variables.$tablet-width) {
     display: none;
@@ -93,11 +99,16 @@
 
 .social__list::after {
   @include pseudo;
-  min-width: 280px;
+  width: 280px;
   height: 1px;
   background-color: variables.$grey-lines;
-  right: 20px;
+  right: 50%;
+  transform: translateX(50%);
   bottom: 93px;
+
+  @media (min-width: 360px) {
+    width: 100%;
+  }
 
   @media (min-width: variables.$tablet-width) {
     display: none;

@@ -5,7 +5,7 @@
   padding-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
-    background-image: linear-gradient(variables.$white 0, variables.$white 617px, variables.$grey 617px, variables.$grey 1080px);
+    background-image: linear-gradient(variables.$white 0, variables.$white 619px, variables.$grey 619px, variables.$grey 1080px);
     padding-bottom: 103px;
   }
 
@@ -51,19 +51,25 @@
     line-height: 24px;
     width: 172px;
     text-align: right;
-    margin: 0;
-    padding-top: 10px;
+    padding-top: 9px;
+    margin: 0 1px 0 5px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 327px;
-    margin-top: 29px;
+    margin: 29px 0 0 0;
   }
 }
 
 .example__expenses-number {
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 5px;
+    display: inline-block;
+  }
+
   @media (min-width: variables.$desktop-width) {
     margin-left: 60px;
+    margin-top: 0;
   }
 }
 
