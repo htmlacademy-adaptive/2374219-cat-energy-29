@@ -19,6 +19,12 @@
   }
 }
 
+.site-list--right {
+  @media (min-width: variables.$tablet-width) {
+    margin-right: unset;
+  }
+}
+
 .site-list__link {
   font-family: variables.$oswald-font;
   color: variables.$black;

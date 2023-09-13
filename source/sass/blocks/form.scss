@@ -21,7 +21,7 @@
   margin-left: 13px;
   border: 1px solid variables.$grey-input;
   flex-grow: 1;
-  padding: 14px 40px 13px 15px;
+  padding: 14px 7px 13px 15px;
 
   &:hover {
     border-color: variables.$grey-measure;
@@ -37,6 +37,7 @@
     height: 52px;
     font-size: 20px;
     line-height: normal;
+    padding: 14px 7px 13px 19px;
   }
 
   &::placeholder {
@@ -54,6 +55,15 @@
   width: 280px;
   min-height: 150px;
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 11px 7px 13px 19px;
+    min-height: 175px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 9px 7px 13px 20px;
+  }
 }
 
 .form__label {
@@ -103,32 +113,47 @@
 }
 
 .form__item-wrapper--contact {
-  margin-top: 44px;
-  margin-bottom: 17px;
+  margin-top: 41px;
+  margin-bottom: 16px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 88px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 51px;
+    margin-bottom: 44px;
   }
 }
 
 .form__item-wrapper--comment {
-  margin-top: 24px;
-  margin-bottom: 21px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 87px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 72px;
+    margin-bottom: 54px;
   }
 }
 
 .form__item-wrapper--adds {
-  margin-top: 35px;
-  margin-bottom: 17px;
+  margin-top: 39px;
+  margin-bottom: 24px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: 87px;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 92px;
+    margin-bottom: 45px;
   }
 }
 
@@ -154,13 +179,13 @@
   text-transform: uppercase;
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 29px 20px;
 
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 768px;
-    padding: 0 370px 0 70px;
+    padding: 0 370px 58px 70px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -189,31 +214,51 @@
 }
 
 .form__container-border {
+  margin-top: 28px;
+
   @media (min-width: variables.$tablet-width) {
     border: 1px solid variables.$grey-input;
-    padding: 28px 87px 7px 27px;
+    padding: 30px 87px 4px 27px;
+    margin-top: 62px;
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 570px;
-    padding: 30px 87px 7px 28px;
+    padding: 27px 87px 7px 28px;
     min-height: 196px;
+    margin-top: 0;
   }
 }
 
+.form__lines {
+  border-top: 1px solid variables.$grey-lines;
+  border-bottom: 1px solid variables.$grey-lines;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
+}
+
+.form__wrapper-line {
+  padding-bottom: 10px;
+}
+
 .form__container--box {
+  margin-bottom: 19px;
+
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 42px;
-    column-gap: 61px;
-    margin-bottom: 59px;
+    row-gap: 54px;
+    margin-bottom: 63px;
+    column-gap: 60px;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 70px;
   }
 }
 
@@ -221,10 +266,12 @@
   @media (min-width: variables.$tablet-width) {
     display: flex;
     column-gap: 64px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: variables.$desktop-width) {
     column-gap: 80px;
+    margin-bottom: 57px;
   }
 }
 
@@ -233,10 +280,13 @@
   font-family: variables.$lato-font;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 21px;
+  margin-top: 20px;
+  margin-bottom: 18px;
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
     font-size: 16px;
+    margin-top: 17px;
+    margin-bottom: 21px;
   }
 }
 
@@ -245,8 +295,12 @@
   flex-direction: column;
   row-gap: 21px;
   text-align: center;
-  margin-bottom: 32px;
-  margin-top: 15px;
+  margin-bottom: 14px;
+  margin-top: 9px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__wrapper--main {
@@ -272,12 +326,14 @@
 
   @media (min-width: variables.$tablet-width) {
     padding-left: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
+    margin-top: 3px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
     line-height: normal;
+    margin-top: 0;
   }
 }
 
@@ -442,7 +498,7 @@
   @media (min-width: variables.$desktop-width) {
     display: flex;
     margin: 0 auto;
-    padding: 66px 0 30px 0;
+    padding: 8px 0 30px 0;
     width: 1220px;
     column-gap: 80px;
   }
@@ -477,10 +533,10 @@
 
   @media (min-width: variables.$tablet-width) {
     top: 15px;
-    right: 16px;
+    right: 15px;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     right: 17px;
   }
 }
@@ -492,10 +548,19 @@
 
   @media (min-width: variables.$tablet-width) {
     top: 16px;
-    right: 13px;
+    right: 15px;
   }
 
-  @media (min-width: variables.$tablet-width) {
+  @media (min-width: variables.$desktop-width) {
     right: 18px;
+  }
+}
+
+.form__input--line {
+  width: 173px;
+  margin-left: 8px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-left: 6px;
   }
 }
