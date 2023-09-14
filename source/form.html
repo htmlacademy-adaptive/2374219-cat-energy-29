@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -23,13 +27,12 @@
                 <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
               </picture>
             </a>
-            <button class="main-header__toggle" type="button">
-              <span class="main-header__toggle-line"></span>
+            <button class="main-header__toggle main-header__toggle--nojs main-header__toggle--closed" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--index main-nav--nojs main-nav--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list site-list--right">
               <li class="site-list__item">
@@ -245,5 +248,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

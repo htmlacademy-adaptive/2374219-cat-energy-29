@@ -1,5 +1,9 @@
 @use "common/variables.scss";
 
+.main-nav--index {
+  position: relative;
+}
+
 .main-nav--closed {
   display: none;
 
@@ -10,6 +14,17 @@
   }
 }
 
-.main-nav__list {
-  position: relative;
+@media (max-width: variables.$mobile-width-only) {
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    background-color: variables.$white;
+  }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  display: block;
 }
