@@ -6,7 +6,7 @@
   text-align: center;
   background-image: linear-gradient(variables.$green-hero-left, variables.$green-hero-right);
   background-repeat: no-repeat;
-  background-size: 100% 305px;
+  background-size: 100% 302px;
   background-position: top center;
 
   @media (min-width: variables.$tablet-width) {
@@ -23,7 +23,7 @@
   background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/hero-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 320px 305px;
+  background-size: 320px 302px;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(variables.$green, 0.85), rgba(variables.$green, 0.85)), url("../img/hero-background-mobile@2x.jpg");
@@ -52,9 +52,12 @@
     font-size: 20px;
     line-height: 20px;
     width: 483px;
-    padding-left: 100px;
     position: relative;
-    padding-top: 10px;
+    padding: 15px 0 22px 90px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -69,7 +72,7 @@
 
   @media (min-width: variables.$desktop-width) {
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 488px;
     width: 552px;
     height: 499px;

@@ -9,17 +9,55 @@
     position: relative;
     display: block;
     min-height: 280px;
+    margin: 0;
 
     &::after {
       position: absolute;
       font-family: variables.$oswald-font;
       color: variables.$light-grey;
       font-size: 280px;
-      top: 90px;
-      left: 110px;
+      top: 132px;
+      right: -3px;
       counter-increment: advantage;
       content: counter(advantage);
       z-index: -1;
+      width: 170px;
+    }
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    display: block;
+    min-height: 280px;
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      font-family: variables.$oswald-font;
+      color: variables.$light-grey;
+      font-size: 280px;
+      top: 132px;
+      right: -3px;
+      counter-increment: advantage;
+      content: counter(advantage);
+      z-index: -1;
+      width: 135px;
+    }
+  }
+}
+
+.advantages__item:first-child {
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  &::after {
+    @media (min-width: variables.$tablet-width) {
+      width: 165px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: 130px;
     }
   }
 }
@@ -37,20 +75,30 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
+    padding-top: 25px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding-top: 51px;
   }
 }
 
 .advantages__text {
-  width: 280px;
   min-height: 54px;
   margin: 0;
   padding-left: 80px;
   position: relative;
 
   @media (min-width: variables.$tablet-width) {
+    width: 280px;
     font-size: 16px;
     line-height: 24px;
-    padding: 151px 26px 57px 0;
+    padding: 151px 14px 57px 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 246px;
+    padding: 151px 4px 57px 0;
   }
 }
 
@@ -66,10 +114,9 @@
     width: 80px;
     height: 80px;
     left: 0;
-    top: 31px;
+    top: 40px;
   }
 }
-
 
 .advantages__text--leaf::after {
   @include pseudo;
@@ -82,7 +129,7 @@
   background-size: contain;
 
   @media (min-width: variables.$tablet-width) {
-    top: 55px;
+    top: 65px;
     left: 24px;
   }
 }
@@ -98,8 +145,12 @@
   background-size: contain;
 
   @media (min-width: variables.$tablet-width) {
-    top: 55px;
+    top: 66px;
     left: 26px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    left: 27px;
   }
 }
 
@@ -114,7 +165,7 @@
   background-size: contain;
 
   @media (min-width: variables.$tablet-width) {
-    top: 55px;
+    top: 65px;
     left: 28px;
   }
 }
@@ -130,20 +181,21 @@
   background-size: contain;
 
   @media (min-width: variables.$tablet-width) {
-    top: 55px;
+    top: 65px;
     left: 27px;
   }
 }
 
 .advantages__list {
   @include list;
-  padding-bottom: 20px;
+  padding-bottom: 27px;
 
   @media (min-width: variables.$tablet-width) {
     display: grid;
     grid-template-columns: min-content min-content;
-    column-gap: 137px;
+    column-gap: 104px;
     counter-reset: advantage;
+    padding-bottom: 46px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -151,5 +203,6 @@
     justify-content: space-between;
     column-gap: 0;
     flex-wrap: wrap;
+    padding-bottom: 33px;
   }
 }

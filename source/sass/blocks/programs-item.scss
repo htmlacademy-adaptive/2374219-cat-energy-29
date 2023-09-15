@@ -127,10 +127,11 @@
   margin: 0;
   padding: 19px 15px 22px 20px;
   position: relative;
+  max-width: 235px;
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
-    padding-left: 52px;
+    padding: 8px 15px 22px 52px;
     font-size: 20px;
   }
 }
@@ -145,12 +146,12 @@
   width: 18px;
   height: 2px;
   background-color: variables.$black;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 120px;
+  top: 26px;
+  right: -19px;
 
   @media (min-width: variables.$tablet-width) {
-    left: 170px;
+    right: -29px;
+    top: 14px;
   }
 }
 
@@ -159,28 +160,38 @@
   position: absolute;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
-  background-size: 12px 9px;
-  width: 12px;
-  height: 9px;
-  top: 50%;
-  left: 133px;
+  background-size: 7px 12px;
+  width: 15px;
+  height: 12px;
+  top: 27px;
+  right: -33px;
   transform: translateY(-50%);
 
   @media (min-width: variables.$tablet-width) {
-    left: 184px;
+    right: -43px;
+    top: 15px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    right: -44px;
   }
 }
 
 .programs-item__link:hover::before {
   height: 2px;
   width: 26px;
+  right: -27px;
+
+  @media (min-width: variables.$tablet-width) {
+    right: -37px;
+  }
 }
 
 .programs-item__link:hover::after {
-  left: 141px;
+  right: -41px;
 
   @media (min-width: variables.$tablet-width) {
-    left: 192px;
+    right: -51px;
   }
 }
 
@@ -203,8 +214,21 @@
   }
 }
 
+.programs-item__text::after {
+  @include pseudo;
+  width: 240px;
+  height: 1px;
+  background-color: variables.$grey-lines;
+  bottom: 57px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}
+
 .programs__list {
   @include list;
+  position: relative;
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
@@ -213,6 +237,24 @@
 }
 
 .programs__item {
-  margin-top: 20px;
+  margin-top: 19px;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-top: -5px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 23px;
+  }
+}
+
+.programs-item:last-child {
+  @media (min-width: variables.$tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 23px;
+  }
 }

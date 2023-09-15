@@ -4,32 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header main-header--white">
-      <div class="main-header__container main-header__container--bottom container">
-        <div class="main-header__logo">
-          <a class="main-header__link logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
-              <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
-              <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
-            </picture>
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/logo-text-tablet.svg" width="118" height="21">
-              <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg" width="101" height="18">
-              <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
-            </picture>
-          </a>
-          <button class="main-header__toggle" type="button">
-            <span class="main-header__toggle-line"></span>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <div class="main-header__container main-header__container--dark container">
+        <div class="main-header__logo main-header__logo--bottom">
+          <div class="main-header__flex">
+            <a class="main-header__link logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-image-desktop.svg" width="70" height="59">
+                <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg" width="60" height="50">
+                <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи.">
+              </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/logo-text-tablet.svg" width="118" height="21">
+                <source media="(min-width: 768px)" srcset="img/logo-text-tablet.svg" width="101" height="18">
+                <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
+              </picture>
+            </a>
+            <button class="main-header__toggle main-header__toggle--nojs main-header__toggle--closed" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--index main-nav--nojs main-nav--closed">
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--right">
               <li class="site-list__item">
                 <a class="site-list__link site-list__link--black" href="index.html">Главная</a>
               </li>
@@ -47,14 +52,14 @@
     <main class="main-container">
       <h1 class="main-container__title main-container__title--big">Подбор программы</h1>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="form__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
         <div class="form__item-box">
           <div class="form__item">
             <div class="form__container form__container--info container">
               <h3 class="visually-hidden">Основная информация о коте</h3>
               <div class="form__wrapper form__wrapper--main">
                 <label class="form__label">Имя:*
-                  <input class="form__input form__input--error" type="text" name="name" placeholder="Барсик" required>
+                  <input class="form__input" type="text" name="name" placeholder="Барсик" required>
                 </label>
               </div>
               <div class="form__wrapper form__wrapper--main">
@@ -62,32 +67,34 @@
                   <input class="form__input" type="number" name="weight" placeholder="7" required>
                 </label>
               </div>
-              <div class="form__wrapper form__wrapper--main">
+              <div class="form__wrapper form__wrapper--main form__wrapper-line">
                 <label class="form__label">Возраст (лет):*
-                  <input class="form__input" type="number" name="age" placeholder="7" required>
+                  <input class="form__input form__input--line" type="number" name="age" placeholder="7" required>
                 </label>
               </div>
             </div>
           </div>
           <div class="form__item">
-            <div class="form__container container form__container--flex">
-              <div class="form__container-border">
-                <h3 class="visually-hidden">Выбор программы:</h3>
-                <label class="form__label">
-                  <input class="form__radio visually-hidden" type="radio" name="program" value="weight-loss" checked="checked">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__mark">Похудение</span>
-                </label>
-                <label class="form__label">
-                  <input class="form__radio visually-hidden" type="radio" name="program" value="weight-gain">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__mark">Набор массы</span>
-                </label>
-                <label class="form__label">
-                  <input class="form__radio visually-hidden" type="radio" name="program" value="no-info">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__mark">Не знаю (нужен ваш совет)</span>
-                </label>
+            <div class="form__lines">
+              <div class="form__container container form__container--flex">
+                <div class="form__container-border">
+                  <h3 class="visually-hidden">Выбор программы:</h3>
+                  <label class="form__label">
+                    <input class="form__radio visually-hidden" type="radio" name="program" value="weight-loss" checked="checked">
+                    <span class="form__radio-mark"></span>
+                    <span class="form__mark">Похудение</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__radio visually-hidden" type="radio" name="program" value="weight-gain">
+                    <span class="form__radio-mark"></span>
+                    <span class="form__mark">Набор массы</span>
+                  </label>
+                  <label class="form__label">
+                    <input class="form__radio visually-hidden" type="radio" name="program" value="no-info">
+                    <span class="form__radio-mark"></span>
+                    <span class="form__mark">Не знаю (нужен ваш совет)</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -101,7 +108,7 @@
           <div class="form__container form__container--contact container">
             <div class="form__wrapper form__wrapper--contact">
               <label class="form__label">E-mail:*
-                <input class="form__input form__input-email form__input--error" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                <input class="form__input form__input-email" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
                 <span class="form__label-email">
                   <svg class="form__svg" width="18" height="14" stroke="#000">
                     <use xlink:href="img/stack.svg#icon-email"></use>
@@ -175,8 +182,10 @@
     <footer class="main-footer">
       <section class="main-footer__section address-contact address-contact--grey">
         <div class="address-contact__container container">
-          <h2 class="address-contact__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="address-contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <h2 class="address-contact__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <address class="address-contact__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8,
+            <span class="address-contact__subtext">Санкт-Петербург</span>
+          </address>
         </div>
       </section>
       <iframe class="main-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197675!2d30.320472476523708!3d59.93871916209441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692114151622!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Офис компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."></iframe>
@@ -200,7 +209,7 @@
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/stack.svg#icon-vkontakte"></use>
+                  <use xlink:href="img/stack.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
@@ -208,7 +217,7 @@
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/stack.svg#icon-youtube"></use>
+                  <use xlink:href="img/stack.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -216,7 +225,7 @@
               <a class="social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/stack.svg#icon-telegram"></use>
+                  <use xlink:href="img/stack.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -239,5 +248,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

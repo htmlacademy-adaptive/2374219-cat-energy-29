@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__container container">
+      <div class="main-header__container main-header__container--light container">
         <div class="main-header__logo main-header__logo--bottom">
           <div class="main-header__flex">
             <a class="main-header__link logo" href="index.html" aria-current="page">
@@ -23,13 +27,12 @@
                 <img class="logo__text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа Кэт Энерджи.">
               </picture>
             </a>
-            <button class="main-header__toggle" type="button">
-              <span class="main-header__toggle-line"></span>
+            <button class="main-header__toggle main-header__toggle--nojs main-header__toggle--closed" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--index main-nav--nojs main-nav--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--current">
@@ -90,7 +93,7 @@
               <p class="advantages__text advantages__text--eat">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="advantages__item">
-              <p class="advantages__text advantages__text--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="advantages__text advantages__text--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ul>
         </div>
@@ -129,8 +132,8 @@
             </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Ползунок слайдера</span>
-              <svg class="slider__icon" width="40" height="40">
-                <use xlink:href="img/stack.svg#slider-button"></use>
+              <svg class="slider__icon" width="24" height="18" viewBox="0 0 24 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z"/>
               </svg>
             </button>
           </div>
@@ -140,8 +143,10 @@
     <footer class="main-footer">
       <section class="main-footer__section address-contact">
         <div class="address-contact__container container">
-          <h2 class="address-contact__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="address-contact__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <h2 class="address-contact__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+          <address class="address-contact__text">ул.&nbsp;Большая Конюшенная,&nbsp;д.&nbsp;19/8,
+            <span class="address-contact__subtext">Санкт-Петербург</span>
+          </address>
         </div>
       </section>
       <iframe class="main-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197675!2d30.320472476523708!3d59.93871916209441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1692114151622!5m2!1sru!2sru" width="320" height="362" allowfullscreen title="Офис компании ул. Большая Конюшенная, д. 19/8 Санкт-Петербург."></iframe>
@@ -165,7 +170,7 @@
               <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/stack.svg#icon-vkontakte"></use>
+                  <use xlink:href="img/stack.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
@@ -173,7 +178,7 @@
               <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/stack.svg#icon-youtube"></use>
+                  <use xlink:href="img/stack.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -181,7 +186,7 @@
               <a class="social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
                 <svg class="social__link-icon" width="28" height="22">
-                  <use xlink:href="img/stack.svg#icon-telegram"></use>
+                  <use xlink:href="img/stack.svg#telegram"></use>
                 </svg>
               </a>
             </li>
@@ -204,5 +209,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

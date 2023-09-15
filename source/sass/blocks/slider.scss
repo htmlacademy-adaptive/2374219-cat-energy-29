@@ -12,17 +12,9 @@
 }
 
 .slider__button {
-  color: variables.$slider-button;
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+  &:hover svg {
+    fill: variables.$green;
+  }
 
   &:hover {
     color: variables.$green;
@@ -31,13 +23,21 @@
     &::before {
       border-color: variables.$green;
     }
+
+    &::after {
+      border-color: variables.$green;
+    }
   }
 
   &:active {
-    color: variables.$green;
     opacity: 0.6;
 
     &::before {
+      border-color: variables.$green;
+      opacity: 0.6;
+    }
+
+    &::after {
       border-color: variables.$green;
       opacity: 0.6;
     }
@@ -49,15 +49,28 @@
     border-right: 2px solid variables.$slider-button;
     border-left: 2px solid variables.$slider-button;
     border-radius: 2px;
-    top: -108px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
+    z-index: 2;
 
     @media (min-width: variables.$tablet-width) {
       height: 512px;
-      top: -236px;
     }
+  }
+
+  &::after {
+    @include pseudo;
+    background-color: variables.$white;
+    border: 2px solid variables.$slider-button;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
   }
 }
 
@@ -72,7 +85,7 @@
     background-color: variables.$grey;
 
     @media (min-width: variables.$tablet-width) {
-      background-image: linear-gradient(variables.$white 0, variables.$white 151px, variables.$grey 151px, variables.$grey 1080px);
+      background-image: linear-gradient(variables.$white 0, variables.$white 153px, variables.$grey 153px, variables.$grey 1080px);
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -87,5 +100,10 @@
 }
 
 .slider__icon {
-  fill: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  fill: variables.$slider-button;
 }

@@ -17,10 +17,17 @@
 
   @media (min-width: variables.$tablet-width) {
     padding-left: 40px;
-    width: 423px;
+    width: 418px;
     font-size: 36px;
     line-height: 36px;
-    padding-right: 40px;
+    padding-right: 34px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    right: 30px;
+    width: 418px;
+    padding-right: 0;
   }
 }
 
@@ -52,7 +59,7 @@
   @media (min-width: variables.$tablet-width) {
     position: absolute;
     right: 130px;
-    width: fit-content;
+    max-width: 240px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -90,15 +97,16 @@
   row-gap: 15px;
   border-top: 1px solid variables.$grey-measure;
   padding-top: 13px;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 
   @media (min-width: variables.$tablet-width) {
-    padding: 26px 38px 28px 38px;
+    padding: 26px 38px 27px 38px;
+    row-gap: 25px;
   }
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 16px 0;
     gap: 40px;
   }
 }
@@ -136,7 +144,7 @@
 }
 
 .addition__item:first-child {
-  margin-top: 26px;
+  margin-top: 18px;
 
   @media (min-width: variables.$tablet-width) {
     border: unset;
@@ -146,13 +154,13 @@
 
 .addition__container {
   @media (min-width: variables.$tablet-width) {
-    margin-top: 70px;
+    margin-top: 56px;
     padding: 0;
   }
 
   @media (min-width: variables.$desktop-width) {
     display: flex;
-    padding: 80px 40px;
+    padding: 54px 40px;
     width: 1300px;
     margin: 0 auto;
   }
@@ -161,9 +169,9 @@
 .addition {
   @media (min-width: variables.$desktop-width) {
     border: none;
-    margin-top: 76px;
+    margin-top: 60px;
     padding: 0;
-    margin-bottom: 87px;
+    margin-bottom: 32px;
   }
 }
 
@@ -180,5 +188,16 @@
     margin: unset;
     padding: 0;
     width: unset;
+  }
+}
+
+.addition__button {
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 auto;
   }
 }

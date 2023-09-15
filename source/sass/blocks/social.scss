@@ -3,23 +3,28 @@
 
 
 .social {
-  display: flex;
-  flex-direction: column;
   background-color: variables.$light-grey;
   text-align: center;
+  position: relative;
 }
 
 .social__list {
   @include list;
   display: flex;
+  flex-wrap: wrap;
   width: 132px;
   min-height: 22px;
   justify-content: space-between;
-  margin: 40px 74px;
+  margin: 37px 74px 35px 74px;
 
   @media (min-width: variables.$tablet-width) {
     margin: 0;
     width: 132px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 0 0 35px;
   }
 }
 
@@ -31,7 +36,7 @@
   align-items: center;
 
   @media (min-width: variables.$tablet-width) {
-    width: 168px;
+    width: 163px;
   }
 }
 
@@ -44,6 +49,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 57px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 72px 40px;
   }
 }
 
@@ -64,4 +75,42 @@
 
 .social__link-icon {
   fill: variables.$slider-button;
+  width: 28px;
+  height: 22px;
+}
+
+.social__list::before {
+  @include pseudo;
+  width: 280px;
+  height: 1px;
+  background-color: variables.$grey-lines;
+  right: 50%;
+  transform: translateX(50%);
+  top: 84px;
+
+  @media (min-width: 360px) {
+    width: 100%;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+}
+
+.social__list::after {
+  @include pseudo;
+  width: 280px;
+  height: 1px;
+  background-color: variables.$grey-lines;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 93px;
+
+  @media (min-width: 360px) {
+    width: 100%;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
 }

@@ -31,7 +31,7 @@
 
 .main-header__logo {
   position: relative;
-  padding: 14px 0;
+  padding: 13px 0 9px 0;
 
   @media (min-width: variables.$tablet-width) {
     padding: 25px 0;
@@ -62,13 +62,11 @@
 }
 
 .main-header__container {
-  border-bottom: 1px solid variables.$grey-header;
   width: unset;
   margin: unset;
   padding: unset;
 
   @media (min-width: variables.$tablet-width) {
-    border: none;
     display: flex;
     justify-content: space-between;
     width: 768px;
@@ -82,8 +80,16 @@
   }
 }
 
-.main-header__logo--bottom {
+.main-header__container--light {
   border-bottom: 1px solid variables.$grey-header;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
+}
+
+.main-header__container--dark {
+  border-bottom: 1px solid variables.$grey-lines;
 
   @media (min-width: variables.$tablet-width) {
     border: none;
@@ -94,42 +100,21 @@
   height: 24px;
   width: 24px;
   padding: 0;
-  display: flex;
   align-items: center;
   border: none;
   cursor: pointer;
-  background-color: transparent;
+  background-color: variables.$white;
+  background-image: url("../img/open.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &:active {
+    opacity: 30%;
+  }
 
   @media (min-width: variables.$tablet-width) {
     display: none;
   }
-}
-
-.main-header__toggle-line {
-  width: 24px;
-  border-top: 1px solid variables.$black;
-  border-bottom: 1px solid variables.$black;
-  position: relative;
-}
-
-.main-header__toggle-line::before {
-  @include pseudo;
-  width: 24px;
-  border-top: 1px solid variables.$black;
-  border-bottom: 1px solid variables.$black;
-  top: 0;
-  left: 0;
-  transform: rotate(0) translateY(-8px);
-}
-
-.main-header__toggle-line::after {
-  @include pseudo;
-  width: 24px;
-  border-top: 1px solid variables.$black;
-  border-bottom: 1px solid variables.$black;
-  top: 0;
-  left: 0;
-  transform: rotate(0) translateY(6px);
 }
 
 .main-header__link {
@@ -140,4 +125,20 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+@media (max-width: variables.$mobile-width-only) {
+  .main-header__toggle--opened {
+    display: block;
+    background-image: url("../img/close.svg");
+  }
+}
+
+.main-header__toggle--closed {
+  display: block;
+  background-image: url("../img/open.svg");
+}
+
+.main-header__toggle--nojs {
+  display: none;
 }
