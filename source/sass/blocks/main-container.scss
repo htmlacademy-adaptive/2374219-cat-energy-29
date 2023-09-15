@@ -64,14 +64,14 @@
   margin-bottom: 40px;
 
   @media (min-width: variables.$tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 84px;
     margin-top: 36px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 65px;
     margin-top: 15px;
   }
 }

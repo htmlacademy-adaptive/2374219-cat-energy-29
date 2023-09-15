@@ -88,10 +88,6 @@
   transform: translateX(50%);
   top: 84px;
 
-  @media (min-width: 360px) {
-    width: 100%;
-  }
-
   @media (min-width: variables.$tablet-width) {
     display: none;
   }
@@ -105,10 +101,6 @@
   right: 50%;
   transform: translateX(50%);
   bottom: 93px;
-
-  @media (min-width: 360px) {
-    width: 100%;
-  }
 
   @media (min-width: variables.$tablet-width) {
     display: none;

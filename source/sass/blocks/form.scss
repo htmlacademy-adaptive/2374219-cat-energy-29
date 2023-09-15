@@ -109,6 +109,7 @@
     transform: translateY(-60%);
     width: unset;
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -160,16 +161,18 @@
 .form__part-title--comment {
   padding-right: 20px;
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
 .form__part-title--adds {
   padding-right: 20px;
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -265,12 +268,12 @@
 .form__container-button {
   @media (min-width: variables.$tablet-width) {
     display: flex;
-    column-gap: 64px;
+    column-gap: 59px;
     margin-bottom: 40px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    column-gap: 80px;
+    column-gap: 77px;
     margin-bottom: 57px;
   }
 }
@@ -411,7 +414,7 @@
   padding: 0;
 
   @media (min-width: variables.$tablet-width) {
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -528,8 +531,8 @@
 .form__label-email {
   position: absolute;
   display: inline-block;
-  right: 14px;
-  top: 13px;
+  right: 13px;
+  top: 14px;
 
   @media (min-width: variables.$tablet-width) {
     top: 15px;
@@ -544,7 +547,7 @@
 .form__label-phone {
   position: absolute;
   right: 14px;
-  top: 14px;
+  top: 15px;
 
   @media (min-width: variables.$tablet-width) {
     top: 16px;
@@ -553,14 +556,5 @@
 
   @media (min-width: variables.$desktop-width) {
     right: 18px;
-  }
-}
-
-.form__input--line {
-  width: 173px;
-  margin-left: 8px;
-
-  @media (min-width: variables.$tablet-width) {
-    margin-left: 6px;
   }
 }

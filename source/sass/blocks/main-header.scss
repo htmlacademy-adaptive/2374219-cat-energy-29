@@ -25,7 +25,7 @@
 
 .main-header--white::before {
   @media (min-width: variables.$desktop-width) {
-    background: none;
+    display: none;
   }
 }
 
@@ -131,12 +131,18 @@
   .main-header__toggle--opened {
     display: block;
     background-image: url("../img/close.svg");
+    margin-bottom: 7px;
   }
 }
 
 .main-header__toggle--closed {
   display: block;
   background-image: url("../img/open.svg");
+  margin-bottom: 4px;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__toggle--nojs {

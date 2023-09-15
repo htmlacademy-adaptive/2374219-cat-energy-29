@@ -9,6 +9,10 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font" type="font/woff" crossorigin>
   </head>
   <body class="page__body">
     <header class="main-header main-header--white">
@@ -68,8 +72,8 @@
                 </label>
               </div>
               <div class="form__wrapper form__wrapper--main form__wrapper-line">
-                <label class="form__label">Возраст (лет):*
-                  <input class="form__input form__input--line" type="number" name="age" placeholder="7" required>
+                <label class="form__label">Возраст (лет):
+                  <input class="form__input" type="number" name="age" placeholder="7" required>
                 </label>
               </div>
             </div>
