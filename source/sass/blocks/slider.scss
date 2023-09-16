@@ -4,6 +4,7 @@
 .slider {
   height: 256px;
   width: 280px;
+  position: relative;
 
   @media (min-width: variables.$tablet-width) {
     height: 512px;
@@ -12,6 +13,16 @@
 }
 
 .slider__button {
+  position: absolute;
+  display: flex;
+  z-index: 4;
+  transition-property: color, opacity, border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   &:hover svg {
     fill: variables.$green;
   }
@@ -46,11 +57,11 @@
     height: 256px;
     border-right: 2px solid variables.$slider-button;
     border-left: 2px solid variables.$slider-button;
-    border-radius: 2px;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 2;
+    transition-property: border-color, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: translate(-50%, -50%);
 
     @media (min-width: variables.$tablet-width) {
       height: 512px;
@@ -83,7 +94,7 @@
     background-color: variables.$grey;
 
     @media (min-width: variables.$tablet-width) {
-      background-image: linear-gradient(variables.$white 0, variables.$white 153px, variables.$grey 153px, variables.$grey 1080px);
+      background-image: linear-gradient(variables.$white 0, variables.$white 151px, variables.$grey 151px, variables.$grey 1080px);
     }
 
     @media (min-width: variables.$desktop-width) {

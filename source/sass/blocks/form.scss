@@ -21,7 +21,7 @@
   margin-left: 13px;
   border: 1px solid variables.$grey-input;
   flex-grow: 1;
-  padding: 14px 7px 13px 15px;
+  padding: 14px 35px 13px 15px;
 
   &:hover {
     border-color: variables.$grey-measure;
@@ -36,8 +36,8 @@
   @media (min-width: variables.$tablet-width) {
     height: 52px;
     font-size: 20px;
-    line-height: normal;
-    padding: 14px 7px 13px 19px;
+    line-height: 22px;
+    padding: 14px 35px 13px 19px;
   }
 
   &::placeholder {
@@ -55,6 +55,7 @@
   width: 280px;
   min-height: 150px;
   margin: 0;
+  padding: 14px 10px 13px 15px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 11px 7px 13px 19px;
@@ -517,14 +518,24 @@
 .form__container--contact {
   @media (min-width: variables.$desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-right: 20px;
   }
 }
 
 .form__wrapper--contact {
+  width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
+  }
+
   @media (min-width: variables.$desktop-width) {
-    min-width: 570px;
+    min-width: 590px;
     position: relative;
+    padding-right: 20px;
   }
 }
 
@@ -556,5 +567,29 @@
 
   @media (min-width: variables.$desktop-width) {
     right: 18px;
+  }
+}
+
+.form__input--age {
+  width: 173px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
+  }
+}
+
+.form__input--weight {
+  width: 203px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
+  }
+}
+
+.form__input-phone {
+  width: 200px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
   }
 }

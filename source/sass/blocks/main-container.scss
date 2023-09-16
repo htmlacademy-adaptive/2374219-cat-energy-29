@@ -18,11 +18,11 @@
     font-size: 60px;
     line-height: 60px;
     width: 530px;
-    padding: 36px 10px 25px 90px;
+    padding: 64px 10px 25px 90px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 52px 10px 25px 80px;
+    padding: 113px 10px 25px 80px;
   }
 }
 
@@ -37,11 +37,11 @@
     font-size: 60px;
     line-height: 60px;
     width: 768px;
-    padding: 35px 70px 54px 70px;
+    padding: 64px 70px 54px 70px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    padding: 15px 40px 55px 40px;
+    padding: 77px 40px 55px 40px;
     margin: 0 auto;
     width: 1300px;
   }
@@ -65,13 +65,13 @@
 
   @media (min-width: variables.$tablet-width) {
     margin-bottom: 84px;
-    margin-top: 36px;
+    margin-top: 64px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: variables.$desktop-width) {
     margin-bottom: 65px;
-    margin-top: 15px;
+    margin-top: 77px;
   }
 }

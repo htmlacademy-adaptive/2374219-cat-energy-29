@@ -42,6 +42,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -57,23 +58,31 @@
 
 .addition__text--position {
   @media (min-width: variables.$tablet-width) {
-    position: absolute;
-    right: 130px;
-    max-width: 240px;
+    margin-left: auto;
+    width: 181px;
+    margin-right: 48px;
   }
 
   @media (min-width: variables.$desktop-width) {
+    width: 243px;
     text-align: left;
-    left: 325px;
+    flex-shrink: 0;
+    padding-right: 20px;
   }
 }
 
 .addition__text--right {
+  margin-left: auto;
   text-align: right;
+  width: 42px;
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: left;
+    margin-left: unset;
+  }
 
   @media (min-width: variables.$desktop-width) {
     text-align: left;
-    min-width: 42px;
   }
 }
 
@@ -105,6 +114,7 @@
   }
 
   @media (min-width: variables.$desktop-width) {
+    align-items: center;
     display: flex;
     padding: 15px 0 16px 0;
     gap: 40px;
@@ -118,7 +128,7 @@
 
   @media (min-width: variables.$tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 630px;
   }
 
