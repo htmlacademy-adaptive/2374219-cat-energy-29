@@ -152,6 +152,9 @@
   }
 }
 
-.main-header__toggle--nojs {
-  display: none;
+@media (max-width: variables.$mobile-width-only) {
+  .main-header__toggle--nojs {
+    display: none;
+  }
 }
+

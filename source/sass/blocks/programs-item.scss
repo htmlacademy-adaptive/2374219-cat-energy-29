@@ -131,7 +131,7 @@
 
   @media (min-width: variables.$tablet-width) {
     width: auto;
-    padding: 8px 15px 22px 52px;
+    padding: 5px 15px 22px 52px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -224,29 +224,6 @@
 
   @media (min-width: variables.$tablet-width) {
     display: none;
-  }
-}
-
-.programs__list {
-  @include list;
-  position: relative;
-
-  @media (min-width: variables.$desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.programs__item {
-  margin-top: 19px;
-  margin-bottom: 20px;
-
-  @media (min-width: variables.$tablet-width) {
-    margin-top: -5px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    margin-top: 23px;
   }
 }
 

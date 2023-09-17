@@ -350,7 +350,7 @@
   border-color: variables.$radio-hover;
 }
 
-.form__radio[type="radio"]:disabled + .form__radio-mark {
+.form__radio[type="radio"]:disabled + .form__radio-mark + .form__mark {
   opacity: 0.3;
   cursor: default;
 }
@@ -484,6 +484,7 @@
 
 .form__svg {
   fill: none;
+  overflow: visible;
 }
 
 .form__input-email:focus + .form__label-email svg {
@@ -519,7 +520,7 @@
   @media (min-width: variables.$desktop-width) {
     display: flex;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
     padding-right: 20px;
   }
@@ -572,6 +573,7 @@
 
 .form__input--age {
   width: 173px;
+  appearance: textfield;
 
   @media (min-width: variables.$tablet-width) {
     width: unset;
@@ -580,6 +582,7 @@
 
 .form__input--weight {
   width: 203px;
+  appearance: textfield;
 
   @media (min-width: variables.$tablet-width) {
     width: unset;
@@ -588,6 +591,14 @@
 
 .form__input-phone {
   width: 200px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
+  }
+}
+
+.form__input-email {
+  width: 217px;
 
   @media (min-width: variables.$tablet-width) {
     width: unset;

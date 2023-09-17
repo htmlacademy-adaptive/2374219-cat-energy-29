@@ -52,6 +52,10 @@
     }
   }
 
+  &:focus svg {
+    fill: variables.$green;
+  }
+
   &::before {
     @include pseudo;
     height: 256px;
