@@ -45,19 +45,17 @@
     top: -1px;
 
     @media (min-width: variables.$tablet-width) {
-      position: absolute;
-      left: 120px;
-      bottom: 531px;
       width: 244px;
       min-height: 54px;
       font-size: 20px;
       line-height: 54px;
-      top: unset;
+      margin-left: 90px;
+      margin-top: 29px;
     }
 
     @media (min-width: variables.$desktop-width) {
-      top: 283px;
-      left: 120px;
+      margin-left: 80px;
+      margin-top: 30px;
     }
   }
 

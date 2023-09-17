@@ -6,12 +6,12 @@
 
   @media (min-width: variables.$tablet-width) {
     background-image: linear-gradient(variables.$white 0, variables.$white 619px, variables.$grey 619px, variables.$grey 1080px);
-    padding-bottom: 103px;
+    padding-bottom: 101px;
   }
 
   @media (min-width: variables.$desktop-width) {
     background-image: linear-gradient(variables.$white 0, variables.$white 136px, variables.$light-grey 136px, variables.$light-grey 600px);
-    padding-bottom: 70px;
+    padding-bottom: 74px;
   }
 }
 
@@ -148,7 +148,7 @@
 
   @media (min-width: variables.$tablet-width) {
     height: 512px;
-    margin-top: 82px;
+    margin-top: 84px;
   }
 
   @media (min-width: variables.$desktop-width) {

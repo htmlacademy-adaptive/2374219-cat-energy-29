@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -32,7 +34,7 @@
             </button>
           </div>
         </div>
-        <nav class="main-nav main-nav--index main-nav--nojs main-nav--closed">
+        <nav class="main-nav main-nav--index main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--current">
@@ -122,12 +124,14 @@
           <div class="example__slider slider">
             <div class="example__image slider__cat slider__cat--fat">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png, img/cat-fat-tablet@2x.png 2x" width="560" height="512"><img class="example__image-cat example__image-cat--fat" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота до похудения.">
+                <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png, img/cat-fat-tablet@2x.png 2x" width="560" height="512">
+                <img class="example__image-cat example__image-cat--fat" src="img/cat-fat-mobile.png" srcset="img/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота до похудения.">
               </picture>
             </div>
             <div class="example__image slider__cat slider__cat--slim">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/cat-slim-tablet.png, img/cat-slim-tablet@2x.png 2x" width="560" height="512"><img class="example__image-cat example__image-cat--slim" src="img/cat-slim-mobile.png" srcset="img/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота после похудения.">
+                <source media="(min-width: 768px)" srcset="img/cat-slim-tablet.png, img/cat-slim-tablet@2x.png 2x" width="560" height="512">
+                <img class="example__image-cat example__image-cat--slim" src="img/cat-slim-mobile.png" srcset="img/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота после похудения.">
               </picture>
             </div>
             <button class="slider__button" type="button">

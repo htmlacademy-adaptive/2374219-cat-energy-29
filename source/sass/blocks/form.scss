@@ -21,7 +21,7 @@
   margin-left: 13px;
   border: 1px solid variables.$grey-input;
   flex-grow: 1;
-  padding: 14px 7px 13px 15px;
+  padding: 14px 35px 13px 15px;
 
   &:hover {
     border-color: variables.$grey-measure;
@@ -36,8 +36,8 @@
   @media (min-width: variables.$tablet-width) {
     height: 52px;
     font-size: 20px;
-    line-height: normal;
-    padding: 14px 7px 13px 19px;
+    line-height: 22px;
+    padding: 14px 35px 13px 19px;
   }
 
   &::placeholder {
@@ -55,6 +55,7 @@
   width: 280px;
   min-height: 150px;
   margin: 0;
+  padding: 14px 10px 13px 15px;
 
   @media (min-width: variables.$tablet-width) {
     padding: 11px 7px 13px 19px;
@@ -109,6 +110,7 @@
     transform: translateY(-60%);
     width: unset;
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -160,16 +162,18 @@
 .form__part-title--comment {
   padding-right: 20px;
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
 .form__part-title--adds {
   padding-right: 20px;
 
-  @media (min-width: variables.$desktop-width) {
+  @media (min-width: variables.$tablet-width) {
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -265,12 +269,12 @@
 .form__container-button {
   @media (min-width: variables.$tablet-width) {
     display: flex;
-    column-gap: 64px;
+    column-gap: 59px;
     margin-bottom: 40px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    column-gap: 80px;
+    column-gap: 77px;
     margin-bottom: 57px;
   }
 }
@@ -346,7 +350,7 @@
   border-color: variables.$radio-hover;
 }
 
-.form__radio[type="radio"]:disabled + .form__radio-mark {
+.form__radio[type="radio"]:disabled + .form__radio-mark + .form__mark {
   opacity: 0.3;
   cursor: default;
 }
@@ -411,7 +415,7 @@
   padding: 0;
 
   @media (min-width: variables.$tablet-width) {
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -480,6 +484,7 @@
 
 .form__svg {
   fill: none;
+  overflow: visible;
 }
 
 .form__input-email:focus + .form__label-email svg {
@@ -514,22 +519,32 @@
 .form__container--contact {
   @media (min-width: variables.$desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-right: 20px;
   }
 }
 
 .form__wrapper--contact {
+  width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
+  }
+
   @media (min-width: variables.$desktop-width) {
-    min-width: 570px;
+    min-width: 590px;
     position: relative;
+    padding-right: 20px;
   }
 }
 
 .form__label-email {
   position: absolute;
   display: inline-block;
-  right: 14px;
-  top: 13px;
+  right: 13px;
+  top: 14px;
 
   @media (min-width: variables.$tablet-width) {
     top: 15px;
@@ -544,7 +559,7 @@
 .form__label-phone {
   position: absolute;
   right: 14px;
-  top: 14px;
+  top: 15px;
 
   @media (min-width: variables.$tablet-width) {
     top: 16px;
@@ -556,11 +571,36 @@
   }
 }
 
-.form__input--line {
+.form__input--age {
   width: 173px;
-  margin-left: 8px;
+  appearance: textfield;
 
   @media (min-width: variables.$tablet-width) {
-    margin-left: 6px;
+    width: unset;
+  }
+}
+
+.form__input--weight {
+  width: 203px;
+  appearance: textfield;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
+  }
+}
+
+.form__input-phone {
+  width: 200px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
+  }
+}
+
+.form__input-email {
+  width: 217px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: unset;
   }
 }
