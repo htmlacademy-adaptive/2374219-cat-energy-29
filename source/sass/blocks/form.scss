@@ -350,12 +350,7 @@
   border-color: variables.$radio-hover;
 }
 
-.form__radio[type="radio"]:disabled + .form__radio-mark {
-  opacity: 0.3;
-  cursor: default;
-}
-
-.form__radio[type="radio"]:disabled ~ .form__mark {
+.form__radio[type="radio"]:disabled + .form__radio-mark + .form__mark {
   opacity: 0.3;
   cursor: default;
 }
@@ -385,11 +380,6 @@
 }
 
 .form__box[type="checkbox"]:disabled + .form__checkbox {
-  opacity: 0.3;
-  cursor: default;
-}
-
-.form__box[type="checkbox"]:disabled ~ .form__check {
   opacity: 0.3;
   cursor: default;
 }
